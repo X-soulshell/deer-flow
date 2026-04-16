@@ -253,22 +253,52 @@ flowchart TD
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 时序图 把“产出管理、Artifacts 与知识沉淀体系”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张关系图把 task、artifact、review、release、knowledge 几个核心对象正式串起来，更能说明为什么这篇一直强调 artifact 不只是附件，而是平台的主对象。
 
 ```mermaid
-sequenceDiagram
-    participant U as 用户/项目
-    participant L as Lead Agent
-    participant S as 专业角色
-    participant G as 治理层
-    participant A as 产物/状态
+erDiagram
+    TASK_CARD {
+      string owner
+      string objective
+      string done_rule
+    }
 
-    U->>L: 提出 产出管理、Artifacts 与知识沉淀体系
-    L->>S: 协作模式
-    S-->>L: 交付机制
-    L->>G: 产出治理
-    G-->>L: 组织扩张
-    L->>A: 运营指标
+    ARTIFACT {
+      string artifact_id
+      string artifact_type
+      string version
+    }
+
+    REVIEW_RECORD {
+      string reviewer
+      string decision
+      string comment
+    }
+
+    RELEASE_PACKAGE {
+      string package_id
+      string release_status
+      string provenance
+    }
+
+    KNOWLEDGE_ENTRY {
+      string pattern
+      string template
+      string reuse_scope
+    }
+
+    OBJECT_MODEL {
+      string object_type
+      string object_id
+      string lifecycle_state
+    }
+
+    TASK_CARD ||--o{ ARTIFACT : produces
+    ARTIFACT ||--o{ REVIEW_RECORD : receives
+    ARTIFACT }o--|| OBJECT_MODEL : represents
+    REVIEW_RECORD ||--o| RELEASE_PACKAGE : approves
+    RELEASE_PACKAGE ||--o{ KNOWLEDGE_ENTRY : yields
+    ARTIFACT ||--o{ KNOWLEDGE_ENTRY : teaches
 ```
 <!-- movie-visuals:end -->
 

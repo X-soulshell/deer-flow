@@ -287,22 +287,40 @@ AI Team Lead 不只是“懂提示词的人”，而是负责：
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 时序图 把“人类团队与 AI 团队的组织设计”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张关系图把“人类团队、AI Team Lead、AI 团队、数字员工层”串成正式组织结构，更贴近正文里反复强调的边界设计和扩张逻辑。
 
 ```mermaid
-sequenceDiagram
-    participant U as 用户/项目
-    participant L as Lead Agent
-    participant S as 专业角色
-    participant G as 治理层
-    participant A as 产物/状态
+erDiagram
+    HUMAN_TEAM {
+      string strategy_owner
+      string product_owner
+      string safety_owner
+    }
 
-    U->>L: 提出 人类团队与 AI 团队的组织设计
-    L->>S: 协作模式
-    S-->>L: 交付机制
-    L->>G: 产出治理
-    G-->>L: 组织扩张
-    L->>A: 运营指标
+    AI_TEAM_LEAD {
+      string role_design
+      string task_boundary
+      string model_routing
+    }
+
+    AI_ROLE {
+      string coding
+      string testing
+      string review
+      string docs
+    }
+
+    DIGITAL_EMPLOYEE {
+      string domain_role
+      string approval_level
+      string artifact_contract
+    }
+
+    HUMAN_TEAM ||--|| AI_TEAM_LEAD : appoints
+    HUMAN_TEAM ||--o{ AI_ROLE : defines_guardrails_for
+    AI_TEAM_LEAD ||--o{ AI_ROLE : organizes
+    AI_ROLE ||--o{ DIGITAL_EMPLOYEE : evolves_into
+    HUMAN_TEAM ||--o{ DIGITAL_EMPLOYEE : governs
 ```
 <!-- movie-visuals:end -->
 

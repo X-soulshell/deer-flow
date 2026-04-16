@@ -272,27 +272,28 @@ Codex app、Copilot coding agent、Antigravity manager surface 都在强调一�
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 类图 把“AI 编程工厂与多智能体研发协作模式”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张甘特图把“AI 编程工厂”的一次典型交付节奏压缩成一个周期，从任务拆分、并行执行、质量收口到知识回写，正好对应正文里的三段式协作与异步节奏。
 
 ```mermaid
-classDiagram
-    class TopicContext {
-      +focus: AI 编程工厂与多智能体研发协作模式
-      +stage: active
-    }
-    class TopicDecision {
-      +rule: 协作模式
-      +alignment: 交付机制
-    }
-    class TopicDelivery {
-      +handoff: 产出治理
-      +governance: 组织扩张
-      +result: 运营指标
-    }
+gantt
+    title AI 编程工厂的一次交付节奏
+    dateFormat X
+    axisFormat %s
 
-    TopicContext --> TopicDecision : 驱动
-    TopicDecision --> TopicDelivery : 产出
-    TopicDelivery --> TopicContext : 反哺
+    section 任务设计
+    Lead 拆分与派工 :a1, 0, 1
+
+    section 并行执行
+    Coding agents 实现 :a2, after a1, 3
+    Test agent 验证 :a3, after a1, 3
+    Doc agent 说明更新 :a4, after a1, 2
+
+    section 质量收口
+    Review agent 审查 :a5, after a2, 1
+    Human merge gate :milestone, m1, after a5, 0
+
+    section 知识沉淀
+    模板与 playbook 回写 :a6, after m1, 1
 ```
 <!-- movie-visuals:end -->
 

@@ -258,22 +258,56 @@ flowchart TD
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 象限图 把“项目治理、推进路线与经营指标”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张类图把治理委员会、PMO、评审委员会、试点机制和指标看板放进一个正式结构里，更接近这篇真正想表达的运营闭环。
 
 ```mermaid
-quadrantChart
-    title 项目治理、推进路线与经营指标 的判断矩阵
-    x-axis 低成熟度 --> 高成熟度
-    y-axis 低业务价值 --> 高业务价值
-    quadrant-1 优先推进
-    quadrant-2 长期布局
-    quadrant-3 保持观察
-    quadrant-4 暂缓投入
-    "协作模式": [0.82, 0.86]
-    "交付机制": [0.74, 0.78]
-    "产出治理": [0.68, 0.72]
-    "组织扩张": [0.59, 0.66]
-    "运营指标": [0.88, 0.91]
+classDiagram
+    class SteeringCommittee {
+      +capital_allocation
+      +strategy_decision
+      +pilot_priority
+    }
+
+    class PMO {
+      +milestone_management
+      +roster_evolution
+      +template_governance
+      +dashboard_ops
+    }
+
+    class ArchitectureBoard {
+      +object_model_review
+      +tooling_standards
+      +integration_rules
+    }
+
+    class SafetyBoard {
+      +policy_gate
+      +audit_controls
+      +model_risk_review
+    }
+
+    class PilotCouncil {
+      +business_feedback
+      +adoption_readiness
+      +replication_plan
+    }
+
+    class MetricDashboard {
+      +delivery_metrics
+      +quality_metrics
+      +reuse_metrics
+      +commercial_metrics
+    }
+
+    SteeringCommittee --> PMO : authorizes
+    PMO --> ArchitectureBoard : requests_review_from
+    PMO --> SafetyBoard : requests_gate_from
+    PMO --> PilotCouncil : coordinates
+    ArchitectureBoard --> MetricDashboard : defines_tech_metrics_for
+    SafetyBoard --> MetricDashboard : defines_governance_metrics_for
+    PilotCouncil --> MetricDashboard : reports_business_metrics_to
+    MetricDashboard --> SteeringCommittee : informs
 ```
 <!-- movie-visuals:end -->
 

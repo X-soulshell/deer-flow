@@ -245,16 +245,46 @@ flowchart LR
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 时间线 把“利用 AI 编程与多智能体推进当前计划落地的总实施方案”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张类图把“平台建设团队”和“数字员工业务层”放进同一张图里，能更直接看清这篇最重要的主线：先由人类核心团队定义边界，再由 AI 研发团队把平台做出来，最后让业务数字员工运行在这个平台之上。
 
 ```mermaid
-timeline
-    title 利用 AI 编程与多智能体推进当前计划落地的总实施方案 的推进时间线
-    阶段 1 : 协作模式
-    阶段 2 : 交付机制
-    阶段 3 : 产出治理
-    阶段 4 : 组织扩张
-    阶段 5 : 运营指标
+classDiagram
+    class HumanCoreTeam {
+      +strategy
+      +architecture
+      +product
+      +governance
+    }
+
+    class AIEngineeringTeam {
+      +lead_agent
+      +coding_agents
+      +test_agents
+      +review_agents
+      +doc_agents
+    }
+
+    class PlatformKernel {
+      +object_model
+      +task_graph
+      +artifact_system
+      +policy_rules
+    }
+
+    class BusinessDigitalEmployees {
+      +director_assistant
+      +producer_agent
+      +budget_agent
+      +ops_agent
+      +legal_agent
+    }
+
+    HumanCoreTeam --> AIEngineeringTeam : sets_target_for
+    HumanCoreTeam --> PlatformKernel : defines_rules_for
+    AIEngineeringTeam --> PlatformKernel : builds
+    AIEngineeringTeam --> BusinessDigitalEmployees : productizes_for
+    PlatformKernel --> BusinessDigitalEmployees : powers
+    BusinessDigitalEmployees --> HumanCoreTeam : returns_metrics_to
 ```
 <!-- movie-visuals:end -->
 

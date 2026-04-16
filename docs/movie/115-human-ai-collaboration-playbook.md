@@ -255,19 +255,25 @@ flowchart LR
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 旅程图 把“人类与 AI、多智能体之间的协作手册”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张状态图把任务卡如何进入单 agent、多 agent、artifact review 与人类守门的全过程连成闭环，更贴合这篇真正想建立的协作制度。
 
 ```mermaid
-journey
-    title 人类与 AI、多智能体之间的协作手册 的协作旅程
-    section 起步
-      协作模式: 5: 用户, 平台
-      交付机制: 4: Lead Agent
-    section 展开
-      产出治理: 4: 专业角色
-      组织扩张: 3: 治理层
-    section 收束
-      运营指标: 5: 项目团队
+stateDiagram-v2
+    [*] --> TaskCard
+    TaskCard --> SoloAgentRun : 简单任务
+    TaskCard --> MultiAgentPlan : 复杂任务
+    SoloAgentRun --> ArtifactReview
+    MultiAgentPlan --> ParallelExecution
+    ParallelExecution --> HandoffCheck
+    HandoffCheck --> ArtifactReview
+    ArtifactReview --> HumanGate
+    HumanGate --> Release : 通过
+    HumanGate --> Rework : 打回
+    HumanGate --> Escalation : 风险升级
+    Rework --> TaskCard
+    Escalation --> HumanGate
+    Release --> KnowledgeCapture
+    KnowledgeCapture --> [*]
 ```
 <!-- movie-visuals:end -->
 
