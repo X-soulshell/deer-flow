@@ -207,6 +207,29 @@ flowchart TD
 
 - 从通用子任务委派，扩展成角色化、对象化、阶段感知的专业委派
 
+### 一张导演总控循环图
+
+```mermaid
+sequenceDiagram
+    participant U as 用户/项目请求
+    participant D as Director Lead Agent
+    participant S as MovieThreadState
+    participant G as Gate / Workflow
+    participant T as task / Subagents
+    participant A as Artifacts / Memory
+
+    U->>D: 提出阶段任务或变更请求
+    D->>S: 读取当前 phase / active objects / risks
+    D->>G: 判断是否可推进、暂停或升级
+    G-->>D: 返回 gate 结论
+    D->>T: 委派专业角色执行
+    T-->>D: 返回结构化结果与风险
+    D->>S: 回写状态、决策和 next actions
+    D->>A: 输出 artifact / memory / checkpoint
+```
+
+这张图把导演总控从“静态角色”变成“持续控制循环”，更容易看清为什么 `Lead Agent` 必须同时管状态、gate、委派和回写。
+
 ---
 
 ## 7. 导演总控智能体和通用主智能体的关键差异

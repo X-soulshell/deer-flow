@@ -183,6 +183,45 @@ flowchart TD
 - `recent_decisions`
 - `memory_refs`
 
+### 一张 movie_state 分层图
+
+```mermaid
+classDiagram
+    class ThreadState {
+      +sandbox
+      +artifacts
+      +todos
+      +thread_data
+      +movie_state
+    }
+
+    class MovieState {
+      +project_identifiers
+      +phase_control
+      +active_object_refs
+      +governance_queues
+      +version_refs
+      +execution_summaries
+    }
+
+    class ObjectStore {
+      +full objects
+      +history
+    }
+
+    class ArtifactStore {
+      +files
+      +packages
+      +archives
+    }
+
+    ThreadState --> MovieState : extends with
+    MovieState --> ObjectStore : references
+    MovieState --> ArtifactStore : indexes
+```
+
+这张图把 74 的关键边界讲得更直接：`ThreadState` 负责运行时驾驶舱，`movie_state` 负责电影语义扩展，而完整事实仍然留在对象与产物存储层。
+
 ---
 
 ## 7. 为什么状态里要保存“索引与摘要”，而不是对象全文
