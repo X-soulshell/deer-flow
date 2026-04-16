@@ -282,3 +282,31 @@ DeerFlow 与好莱坞最匹配的价值，不是替代创作者，而是把 AI �
 - [Runway AI Summit 2026](https://summit.runwayml.com/)
 - [Adobe Premiere AI innovations](https://news.adobe.com/news/2025/04/new-ai-innovation-in-industry)
 - [Netflix: Why InterPositive Is Joining Netflix](https://about.netflix.com/news/why-interpositive-is-joining-netflix)
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：91-102 行业趋势、导演案例与收益分析
+- 上一篇：[91. 2026 模型版图与电影 AI 技术栈](./91-2026-model-landscape-and-film-ai-stack.md)
+- 下一篇：[93. 2026 中国电影制作 AI 化趋势](./93-china-film-ai-production-trends-2026.md)
+
+### 同组文档
+- [91. 2026 模型版图与电影 AI 技术栈](./91-2026-model-landscape-and-film-ai-stack.md)
+- 92. 2026 好莱坞电影制作 AI 化趋势（当前）
+- [93. 2026 中国电影制作 AI 化趋势](./93-china-film-ai-production-trends-2026.md)
+- [94. 导演案例：Christopher Nolan 在 AI 时代的工作法重构](./94-director-case-christopher-nolan.md)
+- [95. 导演案例：James Cameron 在 AI 时代的系统工程电影观](./95-director-case-james-cameron.md)
+- [96. 导演案例：Denis Villeneuve 在 AI 时代如何守住“存在感”](./96-director-case-denis-villeneuve.md)
+- [97. 导演案例：张艺谋与中国电影作者工业化的 AI 路径](./97-director-case-zhang-yimou.md)
+- [98. 导演案例：郭帆与中国科幻工业化的 AI 操作系统](./98-director-case-guo-fan.md)
+- [99. DeerFlow 作为 2026 电影 AI 操作系统的总体收益框架](./99-deerflow-ai-film-operating-system-overview.md)
+- [100. DeerFlow 在好莱坞电影制作 AI 化中的收益地图](./100-deerflow-benefit-map-for-hollywood.md)
+- [101. DeerFlow 在中国电影制作 AI 化中的收益地图](./101-deerflow-benefit-map-for-china-film.md)
+- [102. DeerFlow 在 2026-2027 电影行业中的 ROI、治理与落地路线图](./102-deerflow-roi-governance-and-adoption-roadmap-2026.md)
+<!-- movie-doc-nav:end -->

@@ -125,3 +125,31 @@ flowchart TD
 
 ### 结论三
 在 DeerFlow 的电影化改造中，排期子智能体应当是第二阶段的核心模块。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：25-36 前期制作
+- 上一篇：[27. 预算体系与 line producer 视角](./27-budgeting-and-line-producer-view.md)
+- 下一篇：[29. 选角流程与演员管理](./29-casting-and-actor-management.md)
+
+### 同组文档
+- [25. 剧本开发与锁稿](./25-script-development-and-lock.md)
+- [26. 剧本拆解与 breakdown sheet](./26-script-breakdown-and-breakdown-sheet.md)
+- [27. 预算体系与 line producer 视角](./27-budgeting-and-line-producer-view.md)
+- 28. 排期体系与 1st AD 视角（当前）
+- [29. 选角流程与演员管理](./29-casting-and-actor-management.md)
+- [30. 场地勘景与场地锁定](./30-location-scouting-and-lock.md)
+- [31. 美术、服装、道具协同](./31-art-costume-props-collaboration.md)
+- [32. 摄影、灯光、视效前期协同](./32-cinematography-lighting-vfx-preproduction.md)
+- [33. 文字分镜与镜头表](./33-text-storyboard-and-shot-list.md)
+- [34. 静态分镜图与氛围图](./34-static-storyboards-and-moodboards.md)
+- [35. 风格参考分析与风格统一](./35-style-reference-analysis-and-unification.md)
+- [36. 对白设计与润色](./36-dialogue-design-and-polish.md)
+<!-- movie-doc-nav:end -->

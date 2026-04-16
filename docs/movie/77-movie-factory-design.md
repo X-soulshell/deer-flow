@@ -426,3 +426,29 @@ movie factory 的本质不是“多一个创建函数”，而是把角色、阶
 
 ### 结论三
 在 DeerFlow 中，以现有 `factory.py` 为基础增加 movie assembly layer，是让电影平台真正从一堆设计概念变成运行时系统的关键收口。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：71-80 源码扩展与工程设计
+- 上一篇：[76. movie skills 设计](./76-movie-skills-design.md)
+- 下一篇：[78. 自定义 agent 配置体系](./78-custom-agent-configuration-system.md)
+
+### 同组文档
+- [71. Lead Agent 改造方案](./71-lead-agent-transformation-plan.md)
+- [72. task tool 与子任务委派扩展](./72-task-tool-and-delegation-extension.md)
+- [73. Subagent registry 电影化扩展](./73-subagent-registry-cinema-extension.md)
+- [74. ThreadState 扩展方案](./74-thread-state-extension-plan.md)
+- [75. movie tools 设计](./75-movie-tools-design.md)
+- [76. movie skills 设计](./76-movie-skills-design.md)
+- 77. movie factory 设计（当前）
+- [78. 自定义 agent 配置体系](./78-custom-agent-configuration-system.md)
+- [79. 工作区、产物与文件流](./79-workspace-artifacts-and-file-flow.md)
+- [80. 观测、日志与评估](./80-observability-logging-and-evaluation.md)
+<!-- movie-doc-nav:end -->

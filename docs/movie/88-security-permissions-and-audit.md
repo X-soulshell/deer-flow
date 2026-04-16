@@ -302,3 +302,29 @@ flowchart TD
 
 ### 结论三
 在 DeerFlow 中，以 sandbox、安全中间件、角色权限策略和治理动作钩子为基础建立最小控制面，是试点和企业化之间最重要的安全桥梁。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：81-90 MVP、试点与企业落地
+- 上一篇：[87. 数据治理与资产治理](./87-data-and-asset-governance.md)
+- 下一篇：[89. 评估指标与 ROI](./89-metrics-and-roi.md)
+
+### 同组文档
+- [81. MVP 范围定义](./81-mvp-scope-definition.md)
+- [82. 第一阶段研发计划](./82-phase-1-development-plan.md)
+- [83. 第二阶段研发计划](./83-phase-2-development-plan.md)
+- [84. 第三阶段研发计划](./84-phase-3-development-plan.md)
+- [85. 试点项目实施手册](./85-pilot-project-implementation-manual.md)
+- [86. 团队组织与角色分工](./86-team-organization-and-role-allocation.md)
+- [87. 数据治理与资产治理](./87-data-and-asset-governance.md)
+- 88. 安全、权限与审计（当前）
+- [89. 评估指标与 ROI](./89-metrics-and-roi.md)
+- [90. 企业级落地路线图](./90-enterprise-rollout-roadmap.md)
+<!-- movie-doc-nav:end -->

@@ -219,3 +219,29 @@ flowchart LR
 
 ### 结论三
 如果第三阶段没有把“可试点性”作为核心目标，团队会很容易在看似丰富的功能中失去真实落地能力。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：81-90 MVP、试点与企业落地
+- 上一篇：[83. 第二阶段研发计划](./83-phase-2-development-plan.md)
+- 下一篇：[85. 试点项目实施手册](./85-pilot-project-implementation-manual.md)
+
+### 同组文档
+- [81. MVP 范围定义](./81-mvp-scope-definition.md)
+- [82. 第一阶段研发计划](./82-phase-1-development-plan.md)
+- [83. 第二阶段研发计划](./83-phase-2-development-plan.md)
+- 84. 第三阶段研发计划（当前）
+- [85. 试点项目实施手册](./85-pilot-project-implementation-manual.md)
+- [86. 团队组织与角色分工](./86-team-organization-and-role-allocation.md)
+- [87. 数据治理与资产治理](./87-data-and-asset-governance.md)
+- [88. 安全、权限与审计](./88-security-permissions-and-audit.md)
+- [89. 评估指标与 ROI](./89-metrics-and-roi.md)
+- [90. 企业级落地路线图](./90-enterprise-rollout-roadmap.md)
+<!-- movie-doc-nav:end -->

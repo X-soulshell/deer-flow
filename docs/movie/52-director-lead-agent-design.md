@@ -145,3 +145,28 @@ flowchart LR
 
 ### 结论三
 在 DeerFlow 中，Lead Agent + task + state + skills 的组合天然适合承接导演主智能体。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：52-60 智能体角色设计
+- 上一篇：[51. 项目复盘与知识沉淀](./51-project-retrospective-and-knowledge-capture.md)
+- 下一篇：[53. 制片子智能体设计](./53-producer-subagent-design.md)
+
+### 同组文档
+- 52. 导演主智能体设计（当前）
+- [53. 制片子智能体设计](./53-producer-subagent-design.md)
+- [54. 剧本分析子智能体设计](./54-script-analyst-subagent-design.md)
+- [55. 分镜子智能体设计](./55-storyboard-subagent-design.md)
+- [56. 预算子智能体设计](./56-budget-subagent-design.md)
+- [57. 排期子智能体设计](./57-scheduling-subagent-design.md)
+- [58. 选角子智能体设计](./58-casting-subagent-design.md)
+- [59. 场地子智能体设计](./59-location-subagent-design.md)
+- [60. 摄影语言子智能体设计](./60-cinematography-language-subagent-design.md)
+<!-- movie-doc-nav:end -->

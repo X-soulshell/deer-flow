@@ -322,3 +322,28 @@ DeerFlow 最重要的启发不是“自己去做视频模型”，而是：
 - [OpenAI Help Center: What to know about the Sora discontinuation](https://help.openai.com/zh-hant/articles/20001152-what-to-know-about-the-sora-discontinuation)
 - [Caixin Global: Alibaba unveils HappyHorse](https://www.caixinglobal.com/2026-04-10/alibaba-unveils-happyhorse-after-ai-model-tops-video-rankings-under-alias-102432775.html)
 - [Global Times: Another AI ‘black horse’](https://www.globaltimes.cn/page/202604/1358648.shtml)
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：103-111 未来能力与媒体操作系统演进
+- 上一篇：[105. DeerFlow 未来能力的参考架构与图示说明](./105-deerflow-future-reference-architecture.md)
+- 下一篇：[107. 智能体未来发展的主线：从对话助手走向工作操作系统](./107-agents-future-evolution.md)
+
+### 同组文档
+- [103. DeerFlow 结合电影 AI 化的总体推进方案总梳理](./103-deerflow-movie-integration-strategy-summary.md)
+- [104. DeerFlow 未来应该增加的能力蓝图](./104-deerflow-future-capability-blueprint.md)
+- [105. DeerFlow 未来能力的参考架构与图示说明](./105-deerflow-future-reference-architecture.md)
+- 106. 视频大模型未来发展的主线：从生成器走向世界模拟器（当前）
+- [107. 智能体未来发展的主线：从对话助手走向工作操作系统](./107-agents-future-evolution.md)
+- [108. 视频大模型与智能体的汇合：从生成工具走向媒体操作系统](./108-video-models-and-agents-convergence.md)
+- [109. AI 原生媒体生产管线的未来：从前期预演到交互式后期](./109-ai-native-media-production-pipeline-future.md)
+- [110. DeerFlow 面向“视频大模型 + 智能体”时代的演进路线](./110-deerflow-roadmap-for-video-agent-era.md)
+- [111. 视频大模型与智能体时代的风险、评估与治理](./111-video-agents-risk-evals-and-governance.md)
+<!-- movie-doc-nav:end -->

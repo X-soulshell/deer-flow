@@ -532,3 +532,29 @@ classDiagram
 
 ### 结论三
 在 DeerFlow 中，以现有 `lead_agent` 为骨架，增量引入 `director` profile，是把 61-70 那套平台设计真正挂到运行时里的第一步。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：71-80 源码扩展与工程设计
+- 上一篇：[70. 产物、版本与归档体系设计](./70-artifact-version-and-archive-system.md)
+- 下一篇：[72. task tool 与子任务委派扩展](./72-task-tool-and-delegation-extension.md)
+
+### 同组文档
+- 71. Lead Agent 改造方案（当前）
+- [72. task tool 与子任务委派扩展](./72-task-tool-and-delegation-extension.md)
+- [73. Subagent registry 电影化扩展](./73-subagent-registry-cinema-extension.md)
+- [74. ThreadState 扩展方案](./74-thread-state-extension-plan.md)
+- [75. movie tools 设计](./75-movie-tools-design.md)
+- [76. movie skills 设计](./76-movie-skills-design.md)
+- [77. movie factory 设计](./77-movie-factory-design.md)
+- [78. 自定义 agent 配置体系](./78-custom-agent-configuration-system.md)
+- [79. 工作区、产物与文件流](./79-workspace-artifacts-and-file-flow.md)
+- [80. 观测、日志与评估](./80-observability-logging-and-evaluation.md)
+<!-- movie-doc-nav:end -->

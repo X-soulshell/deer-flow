@@ -186,3 +186,30 @@ flowchart TD
 
 ### 结论三
 源码对照版文档的价值，在于把“方案”直接落到“当前仓库的可改造位置”。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：09-19 源码映射与实施草案
+- 上一篇：[08. 落地路线：如何分阶段把 DeerFlow 改造成导演智能体平台](./08-roadmap.md)
+- 下一篇：[10. 源码对照：主智能体与运行时链如何承接导演智能体](./10-source-mapping-agent-runtime.md)
+
+### 同组文档
+- 09. 源码对照总览：导演智能体方案如何映射到当前仓库（当前）
+- [10. 源码对照：主智能体与运行时链如何承接导演智能体](./10-source-mapping-agent-runtime.md)
+- [11. 源码对照：子智能体、委派机制与电影部门角色如何落地](./11-source-mapping-subagents.md)
+- [12. 源码对照：状态、配置与工厂扩展如何承接电影项目系统](./12-source-mapping-state-and-config.md)
+- [13. 体系化设计稿：导演智能体平台系统蓝图](./13-system-blueprint.md)
+- [14. 实施设计稿：从当前仓库出发的具体改造草案](./14-implementation-draft.md)
+- [15A. 代码级设计草案：导演智能体第一批代码改造方案](./15-a-code-design-draft.md)
+- [16B. 接口与数据结构草案：导演智能体的对象、状态与契约设计](./16-b-interfaces-and-data-contracts.md)
+- [17C. 第一版代码落地方案：从文档走向最小可实现代码](./17-c-first-code-drop-plan.md)
+- [18. 方案1细稿：可直接开发的 Markdown 细稿集合](./18-solution-1-detailed-md-drafts.md)
+- [19. 方案2细稿：最小 MVP 代码实现路径与模块关系图](./19-solution-2-mvp-implementation-path.md)
+<!-- movie-doc-nav:end -->

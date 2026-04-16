@@ -280,3 +280,29 @@ flowchart TD
 
 ### 结论三
 首批团队配置不需要很大，但必须同时覆盖平台、工程、领域和实施四类关键能力。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：81-90 MVP、试点与企业落地
+- 上一篇：[85. 试点项目实施手册](./85-pilot-project-implementation-manual.md)
+- 下一篇：[87. 数据治理与资产治理](./87-data-and-asset-governance.md)
+
+### 同组文档
+- [81. MVP 范围定义](./81-mvp-scope-definition.md)
+- [82. 第一阶段研发计划](./82-phase-1-development-plan.md)
+- [83. 第二阶段研发计划](./83-phase-2-development-plan.md)
+- [84. 第三阶段研发计划](./84-phase-3-development-plan.md)
+- [85. 试点项目实施手册](./85-pilot-project-implementation-manual.md)
+- 86. 团队组织与角色分工（当前）
+- [87. 数据治理与资产治理](./87-data-and-asset-governance.md)
+- [88. 安全、权限与审计](./88-security-permissions-and-audit.md)
+- [89. 评估指标与 ROI](./89-metrics-and-roi.md)
+- [90. 企业级落地路线图](./90-enterprise-rollout-roadmap.md)
+<!-- movie-doc-nav:end -->

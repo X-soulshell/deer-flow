@@ -304,3 +304,28 @@ DeerFlow 最适合扮演的，不是底层视频模型，也不是单一创作�
 - [Runway: Introducing GWM-1](https://runwayml.com/research/introducing-runway-gwm-1)
 - [ByteDance Seed: Seedance 2.0 Official Launch](https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0)
 - [Anthropic: Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：103-111 未来能力与媒体操作系统演进
+- 上一篇：[107. 智能体未来发展的主线：从对话助手走向工作操作系统](./107-agents-future-evolution.md)
+- 下一篇：[109. AI 原生媒体生产管线的未来：从前期预演到交互式后期](./109-ai-native-media-production-pipeline-future.md)
+
+### 同组文档
+- [103. DeerFlow 结合电影 AI 化的总体推进方案总梳理](./103-deerflow-movie-integration-strategy-summary.md)
+- [104. DeerFlow 未来应该增加的能力蓝图](./104-deerflow-future-capability-blueprint.md)
+- [105. DeerFlow 未来能力的参考架构与图示说明](./105-deerflow-future-reference-architecture.md)
+- [106. 视频大模型未来发展的主线：从生成器走向世界模拟器](./106-video-foundation-models-future-evolution.md)
+- [107. 智能体未来发展的主线：从对话助手走向工作操作系统](./107-agents-future-evolution.md)
+- 108. 视频大模型与智能体的汇合：从生成工具走向媒体操作系统（当前）
+- [109. AI 原生媒体生产管线的未来：从前期预演到交互式后期](./109-ai-native-media-production-pipeline-future.md)
+- [110. DeerFlow 面向“视频大模型 + 智能体”时代的演进路线](./110-deerflow-roadmap-for-video-agent-era.md)
+- [111. 视频大模型与智能体时代的风险、评估与治理](./111-video-agents-risk-evals-and-governance.md)
+<!-- movie-doc-nav:end -->

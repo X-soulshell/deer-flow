@@ -769,3 +769,29 @@ flowchart TD
 
 ### 结论三
 在 DeerFlow 中，把这三类对象作为执行层一级核心对象，再由 `MovieThreadState` 管理当前活跃版本与冲突摘要，是让制片、排期、资源协调类子智能体稳定协作的前提。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：61-70 对象、状态、审批与归档
+- 上一篇：[63. Script / Scene / Character 对象体系](./63-script-scene-character-object-system.md)
+- 下一篇：[65. ShotPlan / Storyboard / PromptPack 对象体系](./65-shotplan-storyboard-promptpack-object-system.md)
+
+### 同组文档
+- [61. 项目对象系统总览](./61-project-object-system-overview.md)
+- [62. MovieThreadState 设计](./62-movie-thread-state-design.md)
+- [63. Script / Scene / Character 对象体系](./63-script-scene-character-object-system.md)
+- 64. Budget / Schedule / Resource 对象体系（当前）
+- [65. ShotPlan / Storyboard / PromptPack 对象体系](./65-shotplan-storyboard-promptpack-object-system.md)
+- [66. Review / Approval / ReleasePackage 对象体系](./66-review-approval-release-package-object-system.md)
+- [67. 工作流状态机设计](./67-workflow-state-machine-design.md)
+- [68. 审批流与升级流设计](./68-approval-and-escalation-flow-design.md)
+- [69. 记忆与知识沉淀设计](./69-memory-and-knowledge-capture-design.md)
+- [70. 产物、版本与归档体系设计](./70-artifact-version-and-archive-system.md)
+<!-- movie-doc-nav:end -->

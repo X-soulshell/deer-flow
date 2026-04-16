@@ -173,3 +173,24 @@ flowchart LR
 
 ### 结论三
 DeerFlow 已经具备映射所需的大部分底座，关键在于行业化扩展。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：20-24 方法论、传统流程与转型起点
+- 上一篇：[22. 无 AI 电影制作的组织结构](./22-non-ai-filmmaking-organization.md)
+- 下一篇：[24. DeerFlow 改造总路线图](./24-deerflow-transformation-roadmap.md)
+
+### 同组文档
+- [20. 50+ 文档总规划：面向大规模电影制作的导演智能体平台](./20-master-plan-50-docs.md)
+- [21. 传统电影制作全流程总览](./21-traditional-filmmaking-overview.md)
+- [22. 无 AI 电影制作的组织结构](./22-non-ai-filmmaking-organization.md)
+- 23. 从传统流程到导演智能体平台的映射方法（当前）
+- [24. DeerFlow 改造总路线图](./24-deerflow-transformation-roadmap.md)
+<!-- movie-doc-nav:end -->

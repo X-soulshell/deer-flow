@@ -147,3 +147,34 @@ VFX 后期本质上是跨镜头、跨版本、跨交付的协同系统。
 
 ### 结论三
 导演智能体平台应当把 VFX 后期建模成镜头对象、版本对象和供应商协同流程。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：37-51 拍摄执行、后期与发行
+- 上一篇：[47. 调色流程与视觉统一](./47-color-grading-and-visual-consistency.md)
+- 下一篇：[49. 审核流、版本管理与发布包](./49-review-flow-versioning-and-release-package.md)
+
+### 同组文档
+- [37. principal photography 现场组织](./37-principal-photography-operations.md)
+- [38. call sheet 与每日拍摄计划](./38-call-sheet-and-daily-plan.md)
+- [39. 助理导演调度系统](./39-assistant-director-dispatch-system.md)
+- [40. 进度控制与成本控制](./40-progress-and-cost-control.md)
+- [41. 现场问题升级与决策机制](./41-on-set-escalation-and-decision-making.md)
+- [42. 演员表演指导与导演反馈](./42-performance-direction-and-feedback.md)
+- [43. 摄影、灯光、录音、视效现场协同](./43-on-set-collaboration-camera-light-sound-vfx.md)
+- [44. dailies、出片与审核](./44-dailies-output-and-review.md)
+- [45. 剪辑流程与版本推进](./45-editing-workflow-and-versioning.md)
+- [46. 配音、配乐、音效协同](./46-adr-music-sound-collaboration.md)
+- [47. 调色流程与视觉统一](./47-color-grading-and-visual-consistency.md)
+- 48. VFX 后期协同与交付（当前）
+- [49. 审核流、版本管理与发布包](./49-review-flow-versioning-and-release-package.md)
+- [50. 宣发素材与发行协同](./50-marketing-assets-and-distribution-collaboration.md)
+- [51. 项目复盘与知识沉淀](./51-project-retrospective-and-knowledge-capture.md)
+<!-- movie-doc-nav:end -->

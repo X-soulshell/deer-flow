@@ -303,3 +303,29 @@ flowchart TD
 
 ### 结论三
 第一版 ROI 评估不需要极端精细，但必须尽早建立基线、指标和报告模板，否则平台很难获得持续投入。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：81-90 MVP、试点与企业落地
+- 上一篇：[88. 安全、权限与审计](./88-security-permissions-and-audit.md)
+- 下一篇：[90. 企业级落地路线图](./90-enterprise-rollout-roadmap.md)
+
+### 同组文档
+- [81. MVP 范围定义](./81-mvp-scope-definition.md)
+- [82. 第一阶段研发计划](./82-phase-1-development-plan.md)
+- [83. 第二阶段研发计划](./83-phase-2-development-plan.md)
+- [84. 第三阶段研发计划](./84-phase-3-development-plan.md)
+- [85. 试点项目实施手册](./85-pilot-project-implementation-manual.md)
+- [86. 团队组织与角色分工](./86-team-organization-and-role-allocation.md)
+- [87. 数据治理与资产治理](./87-data-and-asset-governance.md)
+- [88. 安全、权限与审计](./88-security-permissions-and-audit.md)
+- 89. 评估指标与 ROI（当前）
+- [90. 企业级落地路线图](./90-enterprise-rollout-roadmap.md)
+<!-- movie-doc-nav:end -->

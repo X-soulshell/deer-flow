@@ -172,3 +172,24 @@ flowchart LR
 
 ### 结论三
 DeerFlow 的主从多智能体结构，非常适合映射传统电影制作的组织方式。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：20-24 方法论、传统流程与转型起点
+- 上一篇：[21. 传统电影制作全流程总览](./21-traditional-filmmaking-overview.md)
+- 下一篇：[23. 从传统流程到导演智能体平台的映射方法](./23-mapping-traditional-process-to-agent-platform.md)
+
+### 同组文档
+- [20. 50+ 文档总规划：面向大规模电影制作的导演智能体平台](./20-master-plan-50-docs.md)
+- [21. 传统电影制作全流程总览](./21-traditional-filmmaking-overview.md)
+- 22. 无 AI 电影制作的组织结构（当前）
+- [23. 从传统流程到导演智能体平台的映射方法](./23-mapping-traditional-process-to-agent-platform.md)
+- [24. DeerFlow 改造总路线图](./24-deerflow-transformation-roadmap.md)
+<!-- movie-doc-nav:end -->

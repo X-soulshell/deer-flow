@@ -140,3 +140,28 @@ classDiagram
 
 ### 结论三
 在导演智能体平台中，scheduling subagent 应当是中期执行层的核心角色。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：52-60 智能体角色设计
+- 上一篇：[56. 预算子智能体设计](./56-budget-subagent-design.md)
+- 下一篇：[58. 选角子智能体设计](./58-casting-subagent-design.md)
+
+### 同组文档
+- [52. 导演主智能体设计](./52-director-lead-agent-design.md)
+- [53. 制片子智能体设计](./53-producer-subagent-design.md)
+- [54. 剧本分析子智能体设计](./54-script-analyst-subagent-design.md)
+- [55. 分镜子智能体设计](./55-storyboard-subagent-design.md)
+- [56. 预算子智能体设计](./56-budget-subagent-design.md)
+- 57. 排期子智能体设计（当前）
+- [58. 选角子智能体设计](./58-casting-subagent-design.md)
+- [59. 场地子智能体设计](./59-location-subagent-design.md)
+- [60. 摄影语言子智能体设计](./60-cinematography-language-subagent-design.md)
+<!-- movie-doc-nav:end -->

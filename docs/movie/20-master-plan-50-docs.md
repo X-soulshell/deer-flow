@@ -197,3 +197,24 @@ flowchart LR
 
 ### 结论三
 50+ 文档不是为了堆数量，而是为了把“行业流程 -> 平台建模 -> 源码扩展 -> 研发落地 -> 项目试点”完整打通。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：20-24 方法论、传统流程与转型起点
+- 上一篇：[19. 方案2细稿：最小 MVP 代码实现路径与模块关系图](./19-solution-2-mvp-implementation-path.md)
+- 下一篇：[21. 传统电影制作全流程总览](./21-traditional-filmmaking-overview.md)
+
+### 同组文档
+- 20. 50+ 文档总规划：面向大规模电影制作的导演智能体平台（当前）
+- [21. 传统电影制作全流程总览](./21-traditional-filmmaking-overview.md)
+- [22. 无 AI 电影制作的组织结构](./22-non-ai-filmmaking-organization.md)
+- [23. 从传统流程到导演智能体平台的映射方法](./23-mapping-traditional-process-to-agent-platform.md)
+- [24. DeerFlow 改造总路线图](./24-deerflow-transformation-roadmap.md)
+<!-- movie-doc-nav:end -->

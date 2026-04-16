@@ -183,3 +183,24 @@ DeerFlow 的电影化改造必须走阶段化路线，而不是一次性重构�
 
 ### 结论三
 当前仓库已经具备第一阶段 MVP 的大部分底座。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：20-24 方法论、传统流程与转型起点
+- 上一篇：[23. 从传统流程到导演智能体平台的映射方法](./23-mapping-traditional-process-to-agent-platform.md)
+- 下一篇：[25. 剧本开发与锁稿](./25-script-development-and-lock.md)
+
+### 同组文档
+- [20. 50+ 文档总规划：面向大规模电影制作的导演智能体平台](./20-master-plan-50-docs.md)
+- [21. 传统电影制作全流程总览](./21-traditional-filmmaking-overview.md)
+- [22. 无 AI 电影制作的组织结构](./22-non-ai-filmmaking-organization.md)
+- [23. 从传统流程到导演智能体平台的映射方法](./23-mapping-traditional-process-to-agent-platform.md)
+- 24. DeerFlow 改造总路线图（当前）
+<!-- movie-doc-nav:end -->

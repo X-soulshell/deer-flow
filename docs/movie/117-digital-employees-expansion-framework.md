@@ -265,3 +265,26 @@ flowchart TD
 - [Anthropic: Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
 - [Google Developers Blog: Antigravity](https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/)
 - [GitHub: Copilot coding agent GA](https://github.blog/changelog/2025-09-25-copilot-coding-agent-is-now-generally-available/)
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：112-118 AI 研发组织、交付与协作模式
+- 上一篇：[116. 产出管理、Artifacts 与知识沉淀体系](./116-output-management-and-agent-artifacts-system.md)
+- 下一篇：[118. 项目治理、推进路线与经营指标](./118-program-governance-roadmap-and-operating-metrics.md)
+
+### 同组文档
+- [112. 利用 AI 编程与多智能体推进当前计划落地的总实施方案](./112-ai-coding-and-multi-agent-delivery-plan.md)
+- [113. 人类团队与 AI 团队的组织设计](./113-human-team-and-ai-team-organization-design.md)
+- [114. AI 编程工厂与多智能体研发协作模式](./114-ai-engineering-factory-and-collaboration-mode.md)
+- [115. 人类与 AI、多智能体之间的协作手册](./115-human-ai-collaboration-playbook.md)
+- [116. 产出管理、Artifacts 与知识沉淀体系](./116-output-management-and-agent-artifacts-system.md)
+- 117. 数字员工扩张框架：从电影行业走向各行各业的多智能体需求（当前）
+- [118. 项目治理、推进路线与经营指标](./118-program-governance-roadmap-and-operating-metrics.md)
+<!-- movie-doc-nav:end -->

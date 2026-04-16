@@ -301,3 +301,28 @@ flowchart TD
 建议继续看：
 
 - [08-roadmap.md](./08-roadmap.md)
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：00-08 总览与核心框架
+- 上一篇：[06. 数据模型：如何把电影制作从对话变成可管理项目](./06-data-models.md)
+- 下一篇：[08. 落地路线：如何分阶段把 DeerFlow 改造成导演智能体平台](./08-roadmap.md)
+
+### 同组文档
+- [00. 阅读地图：如何系统阅读 `docs/movie`](./00-reading-map.md)
+- [01. 总览：什么是面向电影制作的导演智能体](./01-overview.md)
+- [02. 当前项目能力映射：DeerFlow 如何承接导演智能体](./02-current-project-mapping.md)
+- [03. 目标架构：如何把 DeerFlow 演进成导演智能体系统](./03-target-architecture.md)
+- [04. 阶段工作流：前期、中期、后期如何被导演智能体接管](./04-production-phases.md)
+- [05. Agent 体系：导演、制片、摄影、后期如何组织成多智能体系统](./05-agent-system.md)
+- [06. 数据模型：如何把电影制作从对话变成可管理项目](./06-data-models.md)
+- 07. 工具、记忆、技能：导演智能体真正可用的执行底座（当前）
+- [08. 落地路线：如何分阶段把 DeerFlow 改造成导演智能体平台](./08-roadmap.md)
+<!-- movie-doc-nav:end -->

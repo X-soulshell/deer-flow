@@ -156,3 +156,34 @@ call sheet 是拍摄日的操作系统入口，而不是普通通知单。
 
 ### 结论三
 导演智能体平台应当把 call sheet 作为核心执行对象来管理。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：37-51 拍摄执行、后期与发行
+- 上一篇：[37. principal photography 现场组织](./37-principal-photography-operations.md)
+- 下一篇：[39. 助理导演调度系统](./39-assistant-director-dispatch-system.md)
+
+### 同组文档
+- [37. principal photography 现场组织](./37-principal-photography-operations.md)
+- 38. call sheet 与每日拍摄计划（当前）
+- [39. 助理导演调度系统](./39-assistant-director-dispatch-system.md)
+- [40. 进度控制与成本控制](./40-progress-and-cost-control.md)
+- [41. 现场问题升级与决策机制](./41-on-set-escalation-and-decision-making.md)
+- [42. 演员表演指导与导演反馈](./42-performance-direction-and-feedback.md)
+- [43. 摄影、灯光、录音、视效现场协同](./43-on-set-collaboration-camera-light-sound-vfx.md)
+- [44. dailies、出片与审核](./44-dailies-output-and-review.md)
+- [45. 剪辑流程与版本推进](./45-editing-workflow-and-versioning.md)
+- [46. 配音、配乐、音效协同](./46-adr-music-sound-collaboration.md)
+- [47. 调色流程与视觉统一](./47-color-grading-and-visual-consistency.md)
+- [48. VFX 后期协同与交付](./48-vfx-post-collaboration-and-delivery.md)
+- [49. 审核流、版本管理与发布包](./49-review-flow-versioning-and-release-package.md)
+- [50. 宣发素材与发行协同](./50-marketing-assets-and-distribution-collaboration.md)
+- [51. 项目复盘与知识沉淀](./51-project-retrospective-and-knowledge-capture.md)
+<!-- movie-doc-nav:end -->

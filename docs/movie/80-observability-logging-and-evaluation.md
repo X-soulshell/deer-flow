@@ -420,3 +420,29 @@ flowchart TD
 
 ### 结论三
 在 DeerFlow 中，以 tracing、middleware 插桩、task 执行点和 artifact 构建点为基础建立 movie observability，是让平台具备可控性和可演进性的关键收口。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：71-80 源码扩展与工程设计
+- 上一篇：[79. 工作区、产物与文件流](./79-workspace-artifacts-and-file-flow.md)
+- 下一篇：[81. MVP 范围定义](./81-mvp-scope-definition.md)
+
+### 同组文档
+- [71. Lead Agent 改造方案](./71-lead-agent-transformation-plan.md)
+- [72. task tool 与子任务委派扩展](./72-task-tool-and-delegation-extension.md)
+- [73. Subagent registry 电影化扩展](./73-subagent-registry-cinema-extension.md)
+- [74. ThreadState 扩展方案](./74-thread-state-extension-plan.md)
+- [75. movie tools 设计](./75-movie-tools-design.md)
+- [76. movie skills 设计](./76-movie-skills-design.md)
+- [77. movie factory 设计](./77-movie-factory-design.md)
+- [78. 自定义 agent 配置体系](./78-custom-agent-configuration-system.md)
+- [79. 工作区、产物与文件流](./79-workspace-artifacts-and-file-flow.md)
+- 80. 观测、日志与评估（当前）
+<!-- movie-doc-nav:end -->

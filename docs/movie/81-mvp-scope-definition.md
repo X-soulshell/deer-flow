@@ -370,3 +370,29 @@ MVP 的目标不是做完整电影工业平台，而是做出“前期对象闭�
 
 ### 结论三
 对 DeerFlow 来说，最合适的 MVP 切口是前期导演总控平台，而不是从现场执行或企业级治理重区开始。
+
+---
+
+---
+
+<!-- movie-doc-nav:start -->
+## 文档导航
+
+- 总入口：[README.md](./README.md)
+- 阅读地图：[00-reading-map.md](./00-reading-map.md)
+- 所在分组：81-90 MVP、试点与企业落地
+- 上一篇：[80. 观测、日志与评估](./80-observability-logging-and-evaluation.md)
+- 下一篇：[82. 第一阶段研发计划](./82-phase-1-development-plan.md)
+
+### 同组文档
+- 81. MVP 范围定义（当前）
+- [82. 第一阶段研发计划](./82-phase-1-development-plan.md)
+- [83. 第二阶段研发计划](./83-phase-2-development-plan.md)
+- [84. 第三阶段研发计划](./84-phase-3-development-plan.md)
+- [85. 试点项目实施手册](./85-pilot-project-implementation-manual.md)
+- [86. 团队组织与角色分工](./86-team-organization-and-role-allocation.md)
+- [87. 数据治理与资产治理](./87-data-and-asset-governance.md)
+- [88. 安全、权限与审计](./88-security-permissions-and-audit.md)
+- [89. 评估指标与 ROI](./89-metrics-and-roi.md)
+- [90. 企业级落地路线图](./90-enterprise-rollout-roadmap.md)
+<!-- movie-doc-nav:end -->
