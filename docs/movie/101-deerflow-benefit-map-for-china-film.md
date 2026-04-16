@@ -250,7 +250,21 @@ DeerFlow 恰好能把这些问题一起处理。
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 占比图 把“DeerFlow 在中国电影制作 AI 化中的收益地图”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+pie showData
+    title DeerFlow 在中国电影制作 AI 化中的收益地图 的关注重点
+    "行业变化" : 24
+    "能力跃迁" : 22
+    "落地窗口" : 20
+    "组织收益" : 18
+    "风险治理" : 16
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

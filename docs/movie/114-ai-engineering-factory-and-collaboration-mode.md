@@ -269,7 +269,32 @@ Codex app、Copilot coding agent、Antigravity manager surface 都在强调一�
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 类图 把“AI 编程工厂与多智能体研发协作模式”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+classDiagram
+    class TopicContext {
+      +focus: AI 编程工厂与多智能体研发协作模式
+      +stage: active
+    }
+    class TopicDecision {
+      +rule: 协作模式
+      +alignment: 交付机制
+    }
+    class TopicDelivery {
+      +handoff: 产出治理
+      +governance: 组织扩张
+      +result: 运营指标
+    }
+
+    TopicContext --> TopicDecision : 驱动
+    TopicDecision --> TopicDelivery : 产出
+    TopicDelivery --> TopicContext : 反哺
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

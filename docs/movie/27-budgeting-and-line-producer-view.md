@@ -137,7 +137,21 @@ flowchart TD
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 占比图 把“预算体系与 line producer 视角”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+pie showData
+    title 预算体系与 line producer 视角 的关注重点
+    "创意输入" : 24
+    "结构拆解" : 22
+    "部门筹备" : 20
+    "版本冻结" : 18
+    "前期交接" : 16
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

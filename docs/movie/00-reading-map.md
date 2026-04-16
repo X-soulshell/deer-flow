@@ -207,7 +207,20 @@ flowchart LR
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 流程图 把“阅读地图：如何系统阅读 `docs/movie`”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+flowchart LR
+    A["问题定义"] --> B["阅读地图：如何系统阅读 `docs/movie`"]
+    B --> C["系统分层"]
+    C --> D["角色协作"]
+    D --> E["对象治理"]
+    E --> F["落地路径"]
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

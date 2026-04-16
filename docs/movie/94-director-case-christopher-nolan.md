@@ -262,7 +262,27 @@ flowchart TD
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 象限图 把“导演案例：Christopher Nolan 在 AI 时代的工作法重构”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+quadrantChart
+    title 导演案例：Christopher Nolan 在 AI 时代的工作法重构 的判断矩阵
+    x-axis 低成熟度 --> 高成熟度
+    y-axis 低业务价值 --> 高业务价值
+    quadrant-1 优先推进
+    quadrant-2 长期布局
+    quadrant-3 保持观察
+    quadrant-4 暂缓投入
+    "行业变化": [0.82, 0.86]
+    "能力跃迁": [0.74, 0.78]
+    "落地窗口": [0.68, 0.72]
+    "组织收益": [0.59, 0.66]
+    "风险治理": [0.88, 0.91]
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

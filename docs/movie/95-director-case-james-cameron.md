@@ -268,7 +268,21 @@ James Cameron 型项目给我们的最大启发是：
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 时间线 把“导演案例：James Cameron 在 AI 时代的系统工程电影观”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+timeline
+    title 导演案例：James Cameron 在 AI 时代的系统工程电影观 的推进时间线
+    阶段 1 : 行业变化
+    阶段 2 : 能力跃迁
+    阶段 3 : 落地窗口
+    阶段 4 : 组织收益
+    阶段 5 : 风险治理
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

@@ -150,7 +150,32 @@ flowchart TD
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 类图 把“场地勘景与场地锁定”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+classDiagram
+    class TopicContext {
+      +focus: 场地勘景与场地锁定
+      +stage: active
+    }
+    class TopicDecision {
+      +rule: 创意输入
+      +alignment: 结构拆解
+    }
+    class TopicDelivery {
+      +handoff: 部门筹备
+      +governance: 版本冻结
+      +result: 前期交接
+    }
+
+    TopicContext --> TopicDecision : 驱动
+    TopicDecision --> TopicDelivery : 产出
+    TopicDelivery --> TopicContext : 反哺
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

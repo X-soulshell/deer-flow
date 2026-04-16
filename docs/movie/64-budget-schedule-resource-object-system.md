@@ -772,7 +772,27 @@ flowchart TD
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 象限图 把“Budget / Schedule / Resource 对象体系”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+quadrantChart
+    title Budget / Schedule / Resource 对象体系 的判断矩阵
+    x-axis 低成熟度 --> 高成熟度
+    y-axis 低业务价值 --> 高业务价值
+    quadrant-1 优先推进
+    quadrant-2 长期布局
+    quadrant-3 保持观察
+    quadrant-4 暂缓投入
+    "对象定义": [0.82, 0.86]
+    "状态变化": [0.74, 0.78]
+    "版本边界": [0.68, 0.72]
+    "审批治理": [0.59, 0.66]
+    "归档沉淀": [0.88, 0.91]
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

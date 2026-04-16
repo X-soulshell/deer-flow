@@ -159,7 +159,21 @@ call sheet 是拍摄日的操作系统入口，而不是普通通知单。
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 时间线 把“call sheet 与每日拍摄计划”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+timeline
+    title call sheet 与每日拍摄计划 的推进时间线
+    阶段 1 : 拍摄调度
+    阶段 2 : 现场协同
+    阶段 3 : 版本回看
+    阶段 4 : 后期整合
+    阶段 5 : 交付复盘
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

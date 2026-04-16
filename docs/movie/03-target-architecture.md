@@ -294,7 +294,21 @@ flowchart TB
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 心智图 把“目标架构：如何把 DeerFlow 演进成导演智能体系统”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+mindmap
+  root(("目标架构：如何把 DeerFlow 演进成导演智能体系统"))
+    问题定义
+    系统分层
+    角色协作
+    对象治理
+    落地路径
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

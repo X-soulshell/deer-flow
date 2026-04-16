@@ -160,7 +160,24 @@ classDiagram
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 旅程图 把“配音、配乐、音效协同”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+journey
+    title 配音、配乐、音效协同 的协作旅程
+    section 起步
+      拍摄调度: 5: 用户, 平台
+      现场协同: 4: Lead Agent
+    section 展开
+      版本回看: 4: 专业角色
+      后期整合: 3: 治理层
+    section 收束
+      交付复盘: 5: 项目团队
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

@@ -145,7 +145,24 @@ breakdown 是把剧本转成生产计划的关键桥梁。
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 甘特图 把“剧本拆解与 breakdown sheet”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+gantt
+    title 剧本拆解与 breakdown sheet 的推进节奏
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 关键阶段
+    创意输入 :a1, 2026-01-01, 5d
+    结构拆解 :after a1, 4d
+    部门筹备 :after a1, 5d
+    版本冻结 :after a1, 4d
+    前期交接 :after a1, 3d
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

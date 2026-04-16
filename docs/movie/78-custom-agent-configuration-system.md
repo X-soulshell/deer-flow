@@ -389,7 +389,32 @@ classDiagram
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 类图 把“自定义 agent 配置体系”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+classDiagram
+    class TopicContext {
+      +focus: 自定义 agent 配置体系
+      +stage: active
+    }
+    class TopicDecision {
+      +rule: 运行时入口
+      +alignment: 扩展模块
+    }
+    class TopicDelivery {
+      +handoff: 数据契约
+      +governance: 工具装配
+      +result: 观测反馈
+    }
+
+    TopicContext --> TopicDecision : 驱动
+    TopicDecision --> TopicDelivery : 产出
+    TopicDelivery --> TopicContext : 反哺
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

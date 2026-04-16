@@ -155,7 +155,27 @@ classDiagram
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 状态图 把“演员表演指导与导演反馈”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+stateDiagram-v2
+    state "拍摄调度" as S1
+    state "现场协同" as S2
+    state "版本回看" as S3
+    state "后期整合" as S4
+    state "交付复盘" as S5
+
+    [*] --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> [*]
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

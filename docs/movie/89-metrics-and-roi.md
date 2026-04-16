@@ -306,7 +306,21 @@ flowchart TD
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 占比图 把“评估指标与 ROI”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+pie showData
+    title 评估指标与 ROI 的关注重点
+    "MVP收敛" : 24
+    "阶段建设" : 22
+    "试点执行" : 20
+    "治理校验" : 18
+    "规模复制" : 16
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

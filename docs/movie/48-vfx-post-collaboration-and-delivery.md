@@ -150,7 +150,32 @@ VFX 后期本质上是跨镜头、跨版本、跨交付的协同系统。
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 类图 把“VFX 后期协同与交付”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+classDiagram
+    class TopicContext {
+      +focus: VFX 后期协同与交付
+      +stage: active
+    }
+    class TopicDecision {
+      +rule: 拍摄调度
+      +alignment: 现场协同
+    }
+    class TopicDelivery {
+      +handoff: 版本回看
+      +governance: 后期整合
+      +result: 交付复盘
+    }
+
+    TopicContext --> TopicDecision : 驱动
+    TopicDecision --> TopicDelivery : 产出
+    TopicDelivery --> TopicContext : 反哺
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

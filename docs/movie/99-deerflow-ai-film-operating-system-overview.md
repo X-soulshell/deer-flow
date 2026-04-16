@@ -248,7 +248,21 @@ flowchart LR
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 时间线 把“DeerFlow 作为 2026 电影 AI 操作系统的总体收益框架”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+timeline
+    title DeerFlow 作为 2026 电影 AI 操作系统的总体收益框架 的推进时间线
+    阶段 1 : 行业变化
+    阶段 2 : 能力跃迁
+    阶段 3 : 落地窗口
+    阶段 4 : 组织收益
+    阶段 5 : 风险治理
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

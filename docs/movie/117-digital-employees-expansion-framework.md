@@ -268,7 +268,27 @@ flowchart TD
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 时序图 把“数字员工扩张框架：从电影行业走向各行各业的多智能体需求”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+sequenceDiagram
+    participant U as 用户/项目
+    participant L as Lead Agent
+    participant S as 专业角色
+    participant G as 治理层
+    participant A as 产物/状态
+
+    U->>L: 提出 数字员工扩张框架：从电影行业走向各行各业的多智能体需求
+    L->>S: 协作模式
+    S-->>L: 交付机制
+    L->>G: 产出治理
+    G-->>L: 组织扩张
+    L->>A: 运营指标
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

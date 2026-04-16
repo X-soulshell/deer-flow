@@ -940,7 +940,24 @@ flowchart TD
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 甘特图 把“ShotPlan / Storyboard / PromptPack 对象体系”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+gantt
+    title ShotPlan / Storyboard / PromptPack 对象体系 的推进节奏
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 关键阶段
+    对象定义 :a1, 2026-01-01, 5d
+    状态变化 :after a1, 4d
+    版本边界 :after a1, 5d
+    审批治理 :after a1, 4d
+    归档沉淀 :after a1, 3d
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

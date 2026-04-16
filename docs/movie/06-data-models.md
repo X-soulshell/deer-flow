@@ -392,7 +392,32 @@ Project、Script、Budget、Schedule、ShotPlan、Review、AssetVersion 是最�
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 类图 把“数据模型：如何把电影制作从对话变成可管理项目”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+classDiagram
+    class TopicContext {
+      +focus: 数据模型：如何把电影制作从对话变成可管理项目
+      +stage: active
+    }
+    class TopicDecision {
+      +rule: 问题定义
+      +alignment: 系统分层
+    }
+    class TopicDelivery {
+      +handoff: 角色协作
+      +governance: 对象治理
+      +result: 落地路径
+    }
+
+    TopicContext --> TopicDecision : 驱动
+    TopicDecision --> TopicDelivery : 产出
+    TopicDelivery --> TopicContext : 反哺
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

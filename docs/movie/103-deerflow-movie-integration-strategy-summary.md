@@ -398,7 +398,21 @@ DeerFlow 下一步最重要的不是“再接一个模型”，而是把自己�
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 心智图 把“DeerFlow 结合电影 AI 化的总体推进方案总梳理”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+mindmap
+  root(("DeerFlow 结合电影 AI 化的总体推进方案总梳理"))
+    能力蓝图
+    架构演进
+    模型汇合
+    管线升级
+    治理约束
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

@@ -275,7 +275,27 @@ flowchart TB
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 时序图 把“Agent 体系：导演、制片、摄影、后期如何组织成多智能体系统”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+sequenceDiagram
+    participant U as 用户/项目
+    participant L as Lead Agent
+    participant S as 专业角色
+    participant G as 治理层
+    participant A as 产物/状态
+
+    U->>L: 提出 Agent 体系：导演、制片、摄影、后期如何组织成多智能体系统
+    L->>S: 问题定义
+    S-->>L: 系统分层
+    L->>G: 角色协作
+    G-->>L: 对象治理
+    L->>A: 落地路径
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

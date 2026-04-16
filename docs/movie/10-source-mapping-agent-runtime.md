@@ -253,7 +253,24 @@ if subagent_enabled:
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 旅程图 把“源码对照：主智能体与运行时链如何承接导演智能体”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+journey
+    title 源码对照：主智能体与运行时链如何承接导演智能体 的协作旅程
+    section 起步
+      现有入口: 5: 用户, 平台
+      适配层: 4: Lead Agent
+    section 展开
+      扩展点: 4: 专业角色
+      实现骨架: 3: 治理层
+    section 收束
+      首版落地: 5: 项目团队
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

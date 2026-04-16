@@ -8,6 +8,38 @@
 
 ---
 
+## 一张目录心智图
+
+```mermaid
+mindmap
+  root((docs/movie))
+    总览与核心框架
+      00-08
+      为什么做
+      做成什么
+    源码映射与实施草案
+      09-19
+      当前仓库怎么接
+      第一轮怎么改
+    传统流程与电影方法论
+      20-51
+      真实工业流程
+      前中后期协同
+    平台设计与工程实现
+      52-80
+      角色
+      对象
+      状态
+      工程扩展
+    试点落地与行业未来
+      81-118
+      MVP与治理
+      趋势与案例
+      长期演进
+```
+
+---
+
 ## 从哪里开始
 
 如果你第一次进入这个目录，建议先读这 4 篇：
@@ -112,6 +144,20 @@
 7. [101-deerflow-benefit-map-for-china-film.md](./101-deerflow-benefit-map-for-china-film.md)
 8. [103-deerflow-movie-integration-strategy-summary.md](./103-deerflow-movie-integration-strategy-summary.md)
 9. [106-video-foundation-models-future-evolution.md](./106-video-foundation-models-future-evolution.md) 至 [111-video-agents-risk-evals-and-governance.md](./111-video-agents-risk-evals-and-governance.md)
+
+---
+
+## 一张阅读流转图
+
+```mermaid
+flowchart LR
+    A["先建立全局认知<br/>00-08"] --> B["理解电影工业现实<br/>20-51"]
+    A --> C["理解平台与代码骨架<br/>09-19 / 52-80"]
+    B --> C
+    C --> D["推进 MVP 与试点落地<br/>81-90"]
+    D --> E["理解行业趋势与收益判断<br/>91-102"]
+    E --> F["继续看未来能力与 AI 组织协作<br/>103-118"]
+```
 
 ---
 

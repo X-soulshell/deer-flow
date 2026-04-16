@@ -432,7 +432,24 @@ flowchart LR
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 旅程图 把“Subagent registry 电影化扩展”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+journey
+    title Subagent registry 电影化扩展 的协作旅程
+    section 起步
+      运行时入口: 5: 用户, 平台
+      扩展模块: 4: Lead Agent
+    section 展开
+      数据契约: 4: 专业角色
+      工具装配: 3: 治理层
+    section 收束
+      观测反馈: 5: 项目团队
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

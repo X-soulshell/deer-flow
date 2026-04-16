@@ -441,7 +441,45 @@ DeerFlow 的最佳切入点，不是与 Veo、Runway、Kling、Seedance、HappyH
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 ER 图 把“2026 模型版图与电影 AI 技术栈”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+erDiagram
+    PROJECT ||--o{ TOPIC_SCOPE : contains
+    TOPIC_SCOPE ||--o{ TOPIC_ACTION : drives
+    TOPIC_ACTION ||--o{ TOPIC_OUTPUT : produces
+    TOPIC_ACTION ||--o{ TOPIC_REVIEW : triggers
+    TOPIC_OUTPUT ||--o{ TOPIC_MEMORY : feeds
+
+    PROJECT {
+      string name
+      string phase
+    }
+    TOPIC_SCOPE {
+      string focus
+      string label
+    }
+    TOPIC_ACTION {
+      string step_a
+      string step_b
+    }
+    TOPIC_OUTPUT {
+      string artifact
+      string handoff
+    }
+    TOPIC_REVIEW {
+      string governance
+      string status
+    }
+    TOPIC_MEMORY {
+      string retention
+      string reuse
+    }
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

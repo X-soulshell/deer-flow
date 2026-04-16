@@ -312,7 +312,32 @@ Seedance 2.0、HappyHorse-1.0 等中国模型的快速上升，说明另一种�
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 类图 把“视频大模型与智能体时代的风险、评估与治理”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+classDiagram
+    class TopicContext {
+      +focus: 视频大模型与智能体时代的风险、评估与治理
+      +stage: active
+    }
+    class TopicDecision {
+      +rule: 能力蓝图
+      +alignment: 架构演进
+    }
+    class TopicDelivery {
+      +handoff: 模型汇合
+      +governance: 管线升级
+      +result: 治理约束
+    }
+
+    TopicContext --> TopicDecision : 驱动
+    TopicDecision --> TopicDelivery : 产出
+    TopicDelivery --> TopicContext : 反哺
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

@@ -153,7 +153,27 @@ dailies 是拍摄质量控制与后续决策的关键节点，而不是简单回
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 时序图 把“dailies、出片与审核”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+sequenceDiagram
+    participant U as 用户/项目
+    participant L as Lead Agent
+    participant S as 专业角色
+    participant G as 治理层
+    participant A as 产物/状态
+
+    U->>L: 提出 dailies、出片与审核
+    L->>S: 拍摄调度
+    S-->>L: 现场协同
+    L->>G: 版本回看
+    G-->>L: 后期整合
+    L->>A: 交付复盘
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

@@ -158,7 +158,32 @@ stateDiagram-v2
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 类图 把“现场问题升级与决策机制”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+classDiagram
+    class TopicContext {
+      +focus: 现场问题升级与决策机制
+      +stage: active
+    }
+    class TopicDecision {
+      +rule: 拍摄调度
+      +alignment: 现场协同
+    }
+    class TopicDelivery {
+      +handoff: 版本回看
+      +governance: 后期整合
+      +result: 交付复盘
+    }
+
+    TopicContext --> TopicDecision : 驱动
+    TopicDecision --> TopicDelivery : 产出
+    TopicDelivery --> TopicContext : 反哺
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

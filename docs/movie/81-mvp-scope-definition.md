@@ -373,7 +373,24 @@ MVP 的目标不是做完整电影工业平台，而是做出“前期对象闭�
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 甘特图 把“MVP 范围定义”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+gantt
+    title MVP 范围定义 的推进节奏
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 关键阶段
+    MVP收敛 :a1, 2026-01-01, 5d
+    阶段建设 :after a1, 4d
+    试点执行 :after a1, 5d
+    治理校验 :after a1, 4d
+    规模复制 :after a1, 3d
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

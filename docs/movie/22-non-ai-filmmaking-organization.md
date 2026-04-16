@@ -175,7 +175,24 @@ DeerFlow 的主从多智能体结构，非常适合映射传统电影制作的�
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 旅程图 把“无 AI 电影制作的组织结构”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+journey
+    title 无 AI 电影制作的组织结构 的协作旅程
+    section 起步
+      传统流程: 5: 用户, 平台
+      角色职责: 4: Lead Agent
+    section 展开
+      映射规则: 4: 专业角色
+      平台承接: 3: 治理层
+    section 收束
+      转型策略: 5: 项目团队
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

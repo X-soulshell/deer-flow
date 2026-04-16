@@ -178,7 +178,24 @@ classDiagram
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 旅程图 把“风格参考分析与风格统一”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+journey
+    title 风格参考分析与风格统一 的协作旅程
+    section 起步
+      创意输入: 5: 用户, 平台
+      结构拆解: 4: Lead Agent
+    section 展开
+      部门筹备: 4: 专业角色
+      版本冻结: 3: 治理层
+    section 收束
+      前期交接: 5: 项目团队
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

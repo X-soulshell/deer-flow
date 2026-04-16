@@ -313,7 +313,27 @@ DeerFlow 最应该吸收的，不是某家公司的 UI，而是这三条未来�
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 时序图 把“智能体未来发展的主线：从对话助手走向工作操作系统”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+sequenceDiagram
+    participant U as 用户/项目
+    participant L as Lead Agent
+    participant S as 专业角色
+    participant G as 治理层
+    participant A as 产物/状态
+
+    U->>L: 提出 智能体未来发展的主线：从对话助手走向工作操作系统
+    L->>S: 能力蓝图
+    S-->>L: 架构演进
+    L->>G: 模型汇合
+    G-->>L: 管线升级
+    L->>A: 治理约束
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

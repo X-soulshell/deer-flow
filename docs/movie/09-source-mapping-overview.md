@@ -189,7 +189,32 @@ flowchart TD
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 类图 把“源码对照总览：导演智能体方案如何映射到当前仓库”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+classDiagram
+    class TopicContext {
+      +focus: 源码对照总览：导演智能体方案如何映射到当前仓库
+      +stage: active
+    }
+    class TopicDecision {
+      +rule: 现有入口
+      +alignment: 适配层
+    }
+    class TopicDelivery {
+      +handoff: 扩展点
+      +governance: 实现骨架
+      +result: 首版落地
+    }
+
+    TopicContext --> TopicDecision : 驱动
+    TopicDecision --> TopicDelivery : 产出
+    TopicDelivery --> TopicContext : 反哺
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

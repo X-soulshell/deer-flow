@@ -244,7 +244,21 @@ sequenceDiagram
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 时间线 把“第一阶段研发计划”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+timeline
+    title 第一阶段研发计划 的推进时间线
+    阶段 1 : MVP收敛
+    阶段 2 : 阶段建设
+    阶段 3 : 试点执行
+    阶段 4 : 治理校验
+    阶段 5 : 规模复制
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

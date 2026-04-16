@@ -262,7 +262,24 @@ backend/.deer-flow/agents/
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 甘特图 把“第一版代码落地方案：从文档走向最小可实现代码”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+gantt
+    title 第一版代码落地方案：从文档走向最小可实现代码 的推进节奏
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 关键阶段
+    现有入口 :a1, 2026-01-01, 5d
+    适配层 :after a1, 4d
+    扩展点 :after a1, 5d
+    实现骨架 :after a1, 4d
+    首版落地 :after a1, 3d
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

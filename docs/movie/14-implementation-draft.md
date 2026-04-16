@@ -258,7 +258,26 @@ flowchart TD
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 演进图 把“实施设计稿：从当前仓库出发的具体改造草案”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+gitGraph
+   commit id:"现状"
+   branch movie
+   checkout movie
+   commit id:"现有入口"
+   commit id:"适配层"
+   branch governance
+   checkout governance
+   commit id:"扩展点"
+   checkout movie
+   merge governance id:"实现骨架"
+   commit id:"首版落地"
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航

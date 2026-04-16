@@ -479,7 +479,20 @@ movie tools 不是通用工具的简单别名，而是围绕电影对象、阶�
 
 ---
 
----
+<!-- movie-visuals:start -->
+## 补充图示：换一种视角看本篇
+
+下面这张 流程图 把“movie tools 设计”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+
+```mermaid
+flowchart LR
+    A["运行时入口"] --> B["movie tools 设计"]
+    B --> C["扩展模块"]
+    C --> D["数据契约"]
+    D --> E["工具装配"]
+    E --> F["观测反馈"]
+```
+<!-- movie-visuals:end -->
 
 <!-- movie-doc-nav:start -->
 ## 文档导航
