@@ -66,14 +66,14 @@ flowchart LR
 ```mermaid
 sequenceDiagram
     participant Director
-    participant Actor
+    participant Performer as 演员
     participant ScriptSupervisor
     participant Editor
 
-    Director->>Actor: 提供表演目标与情绪方向
-    Actor->>Director: 执行表演版本
+    Director->>Performer: 提供表演目标与情绪方向
+    Performer->>Director: 执行表演版本
     Director->>ScriptSupervisor: 记录关键反馈点
-    Director->>Actor: 调整节奏/强度/潜台词
+    Director->>Performer: 调整节奏/强度/潜台词
     ScriptSupervisor->>Editor: 同步 take 差异与备注
 ```
 

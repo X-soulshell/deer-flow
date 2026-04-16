@@ -297,12 +297,12 @@ DeerFlow 最重要的启发不是“自己去做视频模型”，而是：
 ```mermaid
 quadrantChart
     title 视频模型演进重点
-    x-axis 更偏单次生成 --> 更偏持续创作与模拟
-    y-axis 较低战略杠杆 --> 较高战略杠杆
-    quadrant-1 下一代核心能力
-    quadrant-2 研究前沿
-    quadrant-3 现有能力优化
-    quadrant-4 过渡能力
+    x-axis "更偏单次生成" --> "更偏持续创作与模拟"
+    y-axis "较低战略杠杆" --> "较高战略杠杆"
+    quadrant-1 "下一代核心能力"
+    quadrant-2 "研究前沿"
+    quadrant-3 "现有能力优化"
+    quadrant-4 "过渡能力"
     "单镜头生成" : [0.14, 0.34]
     "多镜头一致性" : [0.41, 0.72]
     "参考驱动编辑" : [0.56, 0.83]

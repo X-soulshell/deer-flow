@@ -124,12 +124,12 @@ flowchart TD
 ```mermaid
 quadrantChart
     title 2026 电影 AI 栈里的能力定位
-    x-axis 更偏项目总控与推理 --> 更偏媒体执行与生成
-    y-axis 更偏通用能力 --> 更偏专业电影工作流
-    quadrant-1 专业总控能力
-    quadrant-2 专业执行能力
-    quadrant-3 通用总控能力
-    quadrant-4 通用执行能力
+    x-axis "更偏项目总控与推理" --> "更偏媒体执行与生成"
+    y-axis "更偏通用能力" --> "更偏专业电影工作流"
+    quadrant-1 "专业总控能力"
+    quadrant-2 "专业执行能力"
+    quadrant-3 "通用总控能力"
+    quadrant-4 "通用执行能力"
     "推理与代理层": [0.22, 0.48]
     "视觉生成层": [0.82, 0.58]
     "声音与表演层": [0.88, 0.72]

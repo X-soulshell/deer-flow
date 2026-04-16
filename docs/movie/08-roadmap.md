@@ -324,15 +324,15 @@ gantt
     axisFormat %s
 
     section Phase 1 MVP
-    导演 lead agent 与前期角色 :a1, 0, 2
+    导演LeadAgent与前期角色 :a1, 0, 2
     前期核心对象与工具 :a2, after a1, 2
 
     section Phase 2 拍摄执行
-    call sheet 与日报流 :a3, after a2, 2
+    CallSheet与日报流 :a3, after a2, 2
     现场调度与成本控制 :a4, after a3, 2
 
     section Phase 3 后期与版本
-    review 与 version 系统 :a5, after a4, 2
+    Review与Version系统 :a5, after a4, 2
     交付包与归档链 :a6, after a5, 1
 
     section Phase 4 行业平台

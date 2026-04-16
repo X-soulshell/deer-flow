@@ -127,12 +127,12 @@ classDiagram
 ```mermaid
 quadrantChart
     title 选角判断矩阵
-    x-axis 低角色契合 --> 高角色契合
-    y-axis 高执行风险 --> 低执行风险
-    quadrant-1 优先 shortlist
-    quadrant-2 创作优先复审
-    quadrant-3 暂不推进
-    quadrant-4 商业优先重评
+    x-axis "低角色契合" --> "高角色契合"
+    y-axis "高执行风险" --> "低执行风险"
+    quadrant-1 "优先 shortlist"
+    quadrant-2 "创作优先复审"
+    quadrant-3 "暂不推进"
+    quadrant-4 "商业优先重评"
     "候选 A" : [0.88, 0.84]
     "候选 B" : [0.46, 0.79]
     "候选 C" : [0.35, 0.33]

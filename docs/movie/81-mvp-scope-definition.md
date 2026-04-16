@@ -155,12 +155,12 @@ flowchart TD
 ```mermaid
 quadrantChart
     title MVP 范围取舍矩阵
-    x-axis 低实现复杂度 --> 高实现复杂度
-    y-axis 低验证价值 --> 高验证价值
-    quadrant-1 立即纳入
-    quadrant-2 分阶段推进
-    quadrant-3 暂不进入
-    quadrant-4 远期规划
+    x-axis "低实现复杂度" --> "高实现复杂度"
+    y-axis "低验证价值" --> "高验证价值"
+    quadrant-1 "立即纳入"
+    quadrant-2 "分阶段推进"
+    quadrant-3 "暂不进入"
+    quadrant-4 "远期规划"
     "剧本到预算闭环" : [0.36, 0.92]
     "分镜草案生成" : [0.44, 0.83]
     "现场调度系统" : [0.87, 0.68]

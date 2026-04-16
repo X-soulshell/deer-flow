@@ -276,12 +276,12 @@ flowchart TD
 ```mermaid
 quadrantChart
     title 数字员工的扩张优先级
-    x-axis 低流程标准化 --> 高流程标准化
-    y-axis 低授权复杂度 --> 高授权复杂度
-    quadrant-1 高复杂高收益
-    quadrant-2 低标准高风险
-    quadrant-3 暂不优先
-    quadrant-4 先规模化
+    x-axis "低流程标准化" --> "高流程标准化"
+    y-axis "低授权复杂度" --> "高授权复杂度"
+    quadrant-1 "高复杂高收益"
+    quadrant-2 "低标准高风险"
+    quadrant-3 "暂不优先"
+    quadrant-4 "先规模化"
     "内容运营": [0.82, 0.46]
     "排期协调": [0.76, 0.58]
     "预算编制": [0.74, 0.63]

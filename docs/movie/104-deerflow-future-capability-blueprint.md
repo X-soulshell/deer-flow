@@ -73,12 +73,12 @@ flowchart TD
 ```mermaid
 quadrantChart
     title DeerFlow 未来能力的优先级判断
-    x-axis 依赖较低 --> 依赖较高
-    y-axis 必要性较低 --> 必要性较高
-    quadrant-1 优先推进
-    quadrant-2 中长期布局
-    quadrant-3 可延后
-    quadrant-4 条件成熟再做
+    x-axis "依赖较低" --> "依赖较高"
+    y-axis "必要性较低" --> "必要性较高"
+    quadrant-1 "优先推进"
+    quadrant-2 "中长期布局"
+    quadrant-3 "可延后"
+    quadrant-4 "条件成熟再做"
     "项目语义能力": [0.34, 0.94]
     "流程控制能力": [0.46, 0.92]
     "专业动作能力": [0.58, 0.88]
@@ -381,12 +381,12 @@ DeerFlow 未来应该增加的能力，不是“把所有 AI 能力都接进来�
 ```mermaid
 quadrantChart
     title DeerFlow 未来应该增加的能力蓝图 的判断矩阵
-    x-axis 低成熟度 --> 高成熟度
-    y-axis 低业务价值 --> 高业务价值
-    quadrant-1 优先推进
-    quadrant-2 长期布局
-    quadrant-3 保持观察
-    quadrant-4 暂缓投入
+    x-axis "低成熟度" --> "高成熟度"
+    y-axis "低业务价值" --> "高业务价值"
+    quadrant-1 "优先推进"
+    quadrant-2 "长期布局"
+    quadrant-3 "保持观察"
+    quadrant-4 "暂缓投入"
     "能力蓝图": [0.82, 0.86]
     "架构演进": [0.74, 0.78]
     "模型汇合": [0.68, 0.72]

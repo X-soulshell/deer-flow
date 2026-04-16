@@ -258,12 +258,12 @@ DeerFlow 的匹配点主要有五个：
 ```mermaid
 quadrantChart
     title 好莱坞 AI 使用区间
-    x-axis 低权利与工会敏感度 --> 高权利与工会敏感度
-    y-axis 低生产落地成熟度 --> 高生产落地成熟度
-    quadrant-1 优先落地
-    quadrant-2 高敏感探索
-    quadrant-3 暂缓推进
-    quadrant-4 强治理试点
+    x-axis "低权利与工会敏感度" --> "高权利与工会敏感度"
+    y-axis "低生产落地成熟度" --> "高生产落地成熟度"
+    quadrant-1 "优先落地"
+    quadrant-2 "高敏感探索"
+    quadrant-3 "暂缓推进"
+    quadrant-4 "强治理试点"
     "previs / lookdev" : [0.22, 0.86]
     "review / package assist" : [0.34, 0.79]
     "post assist" : [0.41, 0.76]
@@ -311,12 +311,12 @@ DeerFlow 与好莱坞最匹配的价值，不是替代创作者，而是把 AI �
 ```mermaid
 quadrantChart
     title 2026 好莱坞电影制作 AI 化趋势 的判断矩阵
-    x-axis 低成熟度 --> 高成熟度
-    y-axis 低业务价值 --> 高业务价值
-    quadrant-1 优先推进
-    quadrant-2 长期布局
-    quadrant-3 保持观察
-    quadrant-4 暂缓投入
+    x-axis "低成熟度" --> "高成熟度"
+    y-axis "低业务价值" --> "高业务价值"
+    quadrant-1 "优先推进"
+    quadrant-2 "长期布局"
+    quadrant-3 "保持观察"
+    quadrant-4 "暂缓投入"
     "行业变化": [0.82, 0.86]
     "能力跃迁": [0.74, 0.78]
     "落地窗口": [0.68, 0.72]

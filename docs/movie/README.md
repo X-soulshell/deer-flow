@@ -152,12 +152,12 @@ mindmap
 ```mermaid
 quadrantChart
     title 如何选择最适合你的阅读路线
-    x-axis 偏业务判断 --> 偏工程实现
-    y-axis 快速建立认知 --> 深入系统推进
-    quadrant-1 深入业务与治理
-    quadrant-2 深入工程与落地
-    quadrant-3 快速业务导览
-    quadrant-4 快速技术导览
+    x-axis "偏业务判断" --> "偏工程实现"
+    y-axis "快速建立认知" --> "深入系统推进"
+    quadrant-1 "深入业务与治理"
+    quadrant-2 "深入工程与落地"
+    quadrant-3 "快速业务导览"
+    quadrant-4 "快速技术导览"
     "路线 A 总览认知": [0.28, 0.38]
     "路线 B 电影流程": [0.34, 0.78]
     "路线 C 平台设计": [0.72, 0.62]

@@ -445,12 +445,12 @@ classDiagram
 ```mermaid
 quadrantChart
     title 第一批 movie skills 优先级
-    x-axis 低复用性 --> 高复用性
-    y-axis 低业务约束价值 --> 高业务约束价值
-    quadrant-1 优先落地
-    quadrant-2 阶段扩展
-    quadrant-3 暂缓建设
-    quadrant-4 深化打磨
+    x-axis "低复用性" --> "高复用性"
+    y-axis "低业务约束价值" --> "高业务约束价值"
+    quadrant-1 "优先落地"
+    quadrant-2 "阶段扩展"
+    quadrant-3 "暂缓建设"
+    quadrant-4 "深化打磨"
     "movie-script-breakdown" : [0.84, 0.88]
     "movie-budget-planning" : [0.81, 0.86]
     "movie-schedule-planning" : [0.83, 0.89]

@@ -128,12 +128,12 @@ classDiagram
 ```mermaid
 quadrantChart
     title 场地锁定判断矩阵
-    x-axis 低视觉适配 --> 高视觉适配
-    y-axis 高审批与后勤风险 --> 低审批与后勤风险
-    quadrant-1 优先锁定
-    quadrant-2 视觉候补
-    quadrant-3 暂不投入
-    quadrant-4 保留观察
+    x-axis "低视觉适配" --> "高视觉适配"
+    y-axis "高审批与后勤风险" --> "低审批与后勤风险"
+    quadrant-1 "优先锁定"
+    quadrant-2 "视觉候补"
+    quadrant-3 "暂不投入"
+    quadrant-4 "保留观察"
     "场地 A" : [0.86, 0.82]
     "场地 B" : [0.57, 0.76]
     "场地 C" : [0.39, 0.35]

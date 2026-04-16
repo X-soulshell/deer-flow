@@ -295,12 +295,12 @@ flowchart TD
 ```mermaid
 quadrantChart
     title 中国电影 AI 采用区间
-    x-axis 低治理压力 --> 高治理压力
-    y-axis 低工业收益 --> 高工业收益
-    quadrant-1 优先试点
-    quadrant-2 强治理扩展
-    quadrant-3 暂缓进入
-    quadrant-4 分层试验
+    x-axis "低治理压力" --> "高治理压力"
+    y-axis "低工业收益" --> "高工业收益"
+    quadrant-1 "优先试点"
+    quadrant-2 "强治理扩展"
+    quadrant-3 "暂缓进入"
+    quadrant-4 "分层试验"
     "概念验证 / previsualization" : [0.24, 0.86]
     "短剧 / 动画试验" : [0.36, 0.78]
     "项目管理 / 包装交付" : [0.43, 0.83]

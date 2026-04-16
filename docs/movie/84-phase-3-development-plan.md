@@ -212,12 +212,12 @@ flowchart LR
 ```mermaid
 quadrantChart
     title 第三阶段优先级矩阵
-    x-axis 低试点准备价值 --> 高试点准备价值
-    y-axis 低实现稳定性收益 --> 高实现稳定性收益
-    quadrant-1 立即补齐
-    quadrant-2 后续深化
-    quadrant-3 暂缓投入
-    quadrant-4 谨慎扩展
+    x-axis "低试点准备价值" --> "高试点准备价值"
+    y-axis "低实现稳定性收益" --> "高实现稳定性收益"
+    quadrant-1 "立即补齐"
+    quadrant-2 "后续深化"
+    quadrant-3 "暂缓投入"
+    quadrant-4 "谨慎扩展"
     "memory capture" : [0.84, 0.83]
     "archive snapshot" : [0.88, 0.86]
     "timeline / metrics" : [0.86, 0.82]

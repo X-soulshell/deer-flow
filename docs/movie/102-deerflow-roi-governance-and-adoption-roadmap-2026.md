@@ -364,12 +364,12 @@ DeerFlow 的 ROI 不能只按“生成更快”来理解，而要按三件事来
 ```mermaid
 quadrantChart
     title DeerFlow 在 2026-2027 电影行业中的 ROI、治理与落地路线图 的判断矩阵
-    x-axis 低成熟度 --> 高成熟度
-    y-axis 低业务价值 --> 高业务价值
-    quadrant-1 优先推进
-    quadrant-2 长期布局
-    quadrant-3 保持观察
-    quadrant-4 暂缓投入
+    x-axis "低成熟度" --> "高成熟度"
+    y-axis "低业务价值" --> "高业务价值"
+    quadrant-1 "优先推进"
+    quadrant-2 "长期布局"
+    quadrant-3 "保持观察"
+    quadrant-4 "暂缓投入"
     "行业变化": [0.82, 0.86]
     "能力跃迁": [0.74, 0.78]
     "落地窗口": [0.68, 0.72]

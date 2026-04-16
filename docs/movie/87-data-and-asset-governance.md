@@ -99,12 +99,12 @@ flowchart TD
 ```mermaid
 quadrantChart
     title 治理重点如何分布
-    x-axis 偏结构化数据 --> 偏文件与知识资产
-    y-axis 偏日常高频治理 --> 偏长期保留治理
-    quadrant-1 高频资产治理
-    quadrant-2 长期资产治理
-    quadrant-3 高频数据治理
-    quadrant-4 长期数据治理
+    x-axis "偏结构化数据" --> "偏文件与知识资产"
+    y-axis "偏日常高频治理" --> "偏长期保留治理"
+    quadrant-1 "高频资产治理"
+    quadrant-2 "长期资产治理"
+    quadrant-3 "高频数据治理"
+    quadrant-4 "长期数据治理"
     "主数据": [0.22, 0.34]
     "执行数据": [0.36, 0.52]
     "内容资产": [0.72, 0.48]

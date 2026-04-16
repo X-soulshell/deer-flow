@@ -59,13 +59,13 @@ sequenceDiagram
     participant Writer
     participant Director
     participant DialogueAgent
-    participant Actor
+    participant Performer as 演员
     participant Editor
 
     Writer->>DialogueAgent: 提供场景对白草稿
     Director->>DialogueAgent: 提供情绪与节奏目标
-    DialogueAgent->>Actor: 输出角色口吻版本
-    Actor->>Director: 反馈表演自然度
+    DialogueAgent->>Performer: 输出角色口吻版本
+    Performer->>Director: 反馈表演自然度
     Director->>DialogueAgent: 调整对白密度与节奏
     DialogueAgent->>Editor: 输出对白版本记录
 ```

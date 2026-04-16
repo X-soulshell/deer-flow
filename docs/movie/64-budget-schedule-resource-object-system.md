@@ -819,12 +819,12 @@ erDiagram
 ```mermaid
 quadrantChart
     title Budget / Schedule / Resource 对象体系 的判断矩阵
-    x-axis 低成熟度 --> 高成熟度
-    y-axis 低业务价值 --> 高业务价值
-    quadrant-1 优先推进
-    quadrant-2 长期布局
-    quadrant-3 保持观察
-    quadrant-4 暂缓投入
+    x-axis "低成熟度" --> "高成熟度"
+    y-axis "低业务价值" --> "高业务价值"
+    quadrant-1 "优先推进"
+    quadrant-2 "长期布局"
+    quadrant-3 "保持观察"
+    quadrant-4 "暂缓投入"
     "对象定义": [0.82, 0.86]
     "状态变化": [0.74, 0.78]
     "版本边界": [0.68, 0.72]

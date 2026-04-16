@@ -131,12 +131,12 @@ classDiagram
 ```mermaid
 quadrantChart
     title 制片判断矩阵
-    x-axis 低执行可行性 --> 高执行可行性
-    y-axis 低创作收益 --> 高创作收益
-    quadrant-1 优先推进
-    quadrant-2 战略储备
-    quadrant-3 暂不投入
-    quadrant-4 降本重构
+    x-axis "低执行可行性" --> "高执行可行性"
+    y-axis "低创作收益" --> "高创作收益"
+    quadrant-1 "优先推进"
+    quadrant-2 "战略储备"
+    quadrant-3 "暂不投入"
+    quadrant-4 "降本重构"
     "核心场景保留" : [0.78, 0.86]
     "明星档期受限" : [0.41, 0.82]
     "跨城转场方案" : [0.34, 0.58]

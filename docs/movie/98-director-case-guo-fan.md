@@ -283,12 +283,12 @@ gantt
 ```mermaid
 quadrantChart
     title 导演案例：郭帆与中国科幻工业化的 AI 操作系统 的判断矩阵
-    x-axis 低成熟度 --> 高成熟度
-    y-axis 低业务价值 --> 高业务价值
-    quadrant-1 优先推进
-    quadrant-2 长期布局
-    quadrant-3 保持观察
-    quadrant-4 暂缓投入
+    x-axis "低成熟度" --> "高成熟度"
+    y-axis "低业务价值" --> "高业务价值"
+    quadrant-1 "优先推进"
+    quadrant-2 "长期布局"
+    quadrant-3 "保持观察"
+    quadrant-4 "暂缓投入"
     "行业变化": [0.82, 0.86]
     "能力跃迁": [0.74, 0.78]
     "落地窗口": [0.68, 0.72]

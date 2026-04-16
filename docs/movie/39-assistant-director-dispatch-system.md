@@ -149,12 +149,12 @@ stateDiagram-v2
 ```mermaid
 quadrantChart
     title 助理导演调度系统 的判断矩阵
-    x-axis 低成熟度 --> 高成熟度
-    y-axis 低业务价值 --> 高业务价值
-    quadrant-1 优先推进
-    quadrant-2 长期布局
-    quadrant-3 保持观察
-    quadrant-4 暂缓投入
+    x-axis "低成熟度" --> "高成熟度"
+    y-axis "低业务价值" --> "高业务价值"
+    quadrant-1 "优先推进"
+    quadrant-2 "长期布局"
+    quadrant-3 "保持观察"
+    quadrant-4 "暂缓投入"
     "拍摄调度": [0.82, 0.86]
     "现场协同": [0.74, 0.78]
     "版本回看": [0.68, 0.72]

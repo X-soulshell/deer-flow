@@ -206,12 +206,12 @@ Villeneuve 型工作流最需要的是：
 ```mermaid
 quadrantChart
     title Villeneuve 型 AI 使用原则
-    x-axis 低噪声控制力 --> 高噪声控制力
-    y-axis 低作者保护价值 --> 高作者保护价值
-    quadrant-1 优先采用
-    quadrant-2 严格限用
-    quadrant-3 避免投入
-    quadrant-4 易伤作者性
+    x-axis "低噪声控制力" --> "高噪声控制力"
+    y-axis "低作者保护价值" --> "高作者保护价值"
+    quadrant-1 "优先采用"
+    quadrant-2 "严格限用"
+    quadrant-3 "避免投入"
+    quadrant-4 "易伤作者性"
     "风格一致性检查" : [0.21, 0.88]
     "分镜辅助编排" : [0.33, 0.84]
     "声音节奏预演" : [0.38, 0.79]
@@ -255,12 +255,12 @@ Denis Villeneuve 给电影 AI 化带来的启发是：
 ```mermaid
 quadrantChart
     title 导演案例：Denis Villeneuve 在 AI 时代如何守住“存在感” 的判断矩阵
-    x-axis 低成熟度 --> 高成熟度
-    y-axis 低业务价值 --> 高业务价值
-    quadrant-1 优先推进
-    quadrant-2 长期布局
-    quadrant-3 保持观察
-    quadrant-4 暂缓投入
+    x-axis "低成熟度" --> "高成熟度"
+    y-axis "低业务价值" --> "高业务价值"
+    quadrant-1 "优先推进"
+    quadrant-2 "长期布局"
+    quadrant-3 "保持观察"
+    quadrant-4 "暂缓投入"
     "行业变化": [0.82, 0.86]
     "能力跃迁": [0.74, 0.78]
     "落地窗口": [0.68, 0.72]

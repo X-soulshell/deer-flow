@@ -151,12 +151,12 @@ flowchart LR
 ```mermaid
 quadrantChart
     title DeerFlow 与“模型直连”的定位差异
-    x-axis 更偏单点生成工具 --> 更偏项目操作系统
-    y-axis 更偏个人使用 --> 更偏组织治理
-    quadrant-1 组织级系统
-    quadrant-2 项目级治理
-    quadrant-3 个人创作工具
-    quadrant-4 团队执行工具
+    x-axis "更偏单点生成工具" --> "更偏项目操作系统"
+    y-axis "更偏个人使用" --> "更偏组织治理"
+    quadrant-1 "组织级系统"
+    quadrant-2 "项目级治理"
+    quadrant-3 "个人创作工具"
+    quadrant-4 "团队执行工具"
     "单模型创作入口": [0.18, 0.22]
     "单团队拼接工作流": [0.42, 0.46]
     "后期专业工具": [0.58, 0.74]
