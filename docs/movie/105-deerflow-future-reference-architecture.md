@@ -305,6 +305,52 @@ flowchart TD
 
 ---
 
+如果把参考架构里的层和横切能力放进关系图，会更容易看出哪些能力是“层内模块”，哪些是“全局基础设施”：
+
+```mermaid
+erDiagram
+    ENTRY_SURFACE ||--o{ CONTROL_CORE : triggers
+    CONTROL_CORE ||--o{ SEMANTIC_CORE : reads
+    CONTROL_CORE ||--o{ ACTION_RUNTIME : drives
+    CONTROL_CORE ||--o{ MEDIA_ORCHESTRATION : routes
+    CONTROL_CORE ||--o{ GOVERNANCE_CORE : checks
+    CONTROL_CORE ||--o{ KNOWLEDGE_CORE : records
+    CONSTRAINT_LAYER ||--o{ ACTION_RUNTIME : constrains
+    TRACE_LAYER ||--o{ GOVERNANCE_CORE : audits
+    SCORING_LAYER ||--o{ KNOWLEDGE_CORE : feeds
+
+    ENTRY_SURFACE {
+      string ui_mode
+      string trigger_type
+    }
+    CONTROL_CORE {
+      string manager_role
+      string control_state
+    }
+    SEMANTIC_CORE {
+      string active_object_set
+      string state_snapshot
+    }
+    ACTION_RUNTIME {
+      string tool_contract
+      string task_policy
+    }
+    MEDIA_ORCHESTRATION {
+      string model_route
+      string fallback_rule
+    }
+    GOVERNANCE_CORE {
+      string approval_mode
+      string version_rule
+    }
+    KNOWLEDGE_CORE {
+      string memory_scope
+      string roi_metric
+    }
+```
+
+---
+
 ## 10. 核心结论
 
 如果要给 DeerFlow 的未来能力画一张“真正能实施”的图，那么这张图不该从模型开始，而应该从：

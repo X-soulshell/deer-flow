@@ -275,6 +275,45 @@ DeerFlow 最适合扮演的，不是底层视频模型，也不是单一创作�
 
 ---
 
+如果把汇合后的对象层单独抽出来，会更容易看出“目标、shot、模型运行、评估、审批”为什么必须属于同一个媒体操作系统：
+
+```mermaid
+erDiagram
+    GOAL_BRIEF ||--o{ SHOT_PLAN : decomposes
+    SHOT_PLAN ||--o{ MODEL_RUN : executes
+    MODEL_RUN ||--o{ EVAL_RESULT : scores
+    EVAL_RESULT ||--o{ APPROVAL_GATE : promotes
+    APPROVAL_GATE ||--o{ RELEASE_STATE : advances
+
+    GOAL_BRIEF {
+      string goal_id
+      string success_criteria
+    }
+    SHOT_PLAN {
+      string shot_id
+      string continuity_rule
+    }
+    MODEL_RUN {
+      string model_name
+      string input_pack
+      string run_status
+    }
+    EVAL_RESULT {
+      string score_type
+      string score_value
+    }
+    APPROVAL_GATE {
+      string approver_role
+      string decision_state
+    }
+    RELEASE_STATE {
+      string version_id
+      string publish_scope
+    }
+```
+
+---
+
 ## 11. 核心结论
 
 视频大模型和智能体未来不会各自独立发展，而会在“媒体操作系统”这一层汇合。

@@ -299,6 +299,54 @@ flowchart TD
 
 ---
 
+如果把 110 的 8 项核心能力放进依赖关系图，会更容易看出为什么这条路线必须“先语义和控制，再治理和复利”：
+
+```mermaid
+erDiagram
+    MEDIA_SEMANTICS ||--o{ TASK_GRAPH : enables
+    TASK_GRAPH ||--o{ MODEL_REGISTRY : routes
+    TASK_GRAPH ||--o{ EVALUATOR_LAYER : measures
+    EVALUATOR_LAYER ||--o{ REVIEW_ENGINE : informs
+    REVIEW_ENGINE ||--o{ VERSION_LEDGER : promotes
+    VERSION_LEDGER ||--o{ PROVENANCE_LAYER : records
+    VERSION_LEDGER ||--o{ KNOWLEDGE_HUB : teaches
+
+    MEDIA_SEMANTICS {
+      string semantic_scope
+      string object_set
+    }
+    TASK_GRAPH {
+      string task_mode
+      string execution_state
+    }
+    MODEL_REGISTRY {
+      string model_name
+      string fallback_state
+    }
+    EVALUATOR_LAYER {
+      string score_pack
+      string ranking_rule
+    }
+    REVIEW_ENGINE {
+      string review_state
+      string approver_scope
+    }
+    VERSION_LEDGER {
+      string version_id
+      string approval_flag
+    }
+    PROVENANCE_LAYER {
+      string source_trace
+      string label_state
+    }
+    KNOWLEDGE_HUB {
+      string template_name
+      string lesson_scope
+    }
+```
+
+---
+
 ## 10. 核心结论
 
 当视频模型和智能体进入同一个时代，DeerFlow 最值得做的不是“模仿前沿视频工作台”，而是：

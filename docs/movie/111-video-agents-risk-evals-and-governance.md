@@ -283,6 +283,23 @@ Seedance 2.0、HappyHorse-1.0 等中国模型的快速上升，说明另一种�
 
 ---
 
+如果把风险、评估、治理放进闭环状态图，会更容易看出为什么未来平台真正比拼的是“能否持续消化不确定性”：
+
+```mermaid
+stateDiagram-v2
+    [*] --> ModelChange
+    ModelChange --> EvalRun
+    EvalRun --> ReviewGate
+    ReviewGate --> ApprovedFlow
+    ReviewGate --> NeedsFallback
+    NeedsFallback --> RegistryUpdate
+    RegistryUpdate --> EvalRun
+    ApprovedFlow --> KnowledgeCapture
+    KnowledgeCapture --> [*]
+```
+
+---
+
 ## 12. 核心结论
 
 视频大模型与智能体时代，真正会拉开平台差距的，不只是生成质量，而是：

@@ -212,6 +212,26 @@ DeerFlow 如果要接住未来生产管线，最重要的不是“让用户在�
 
 ---
 
+如果把未来 AI 原生媒体管线放进阶段节奏图，会更容易看出为什么“评审前移”和“版本增殖”会成为新常态：
+
+```mermaid
+gantt
+    title AI 原生媒体管线的阶段重排
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 前期
+    剧本拆解与对象化 :a1, 2026-04-01, 4d
+    预演与 reference 绑定 :a2, after a1, 4d
+    section 中期
+    生成 / 编辑并行 :b1, after a2, 5d
+    多源版本评审 :b2, 2026-04-08, 5d
+    section 后期
+    持续 review / approval :c1, after b1, 4d
+    release / archive :c2, after c1, 3d
+```
+
+---
+
 ## 12. 核心结论
 
 未来 AI 原生媒体生产管线最大的变化，不是“某一步更快”，而是：

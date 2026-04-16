@@ -322,6 +322,44 @@ flowchart TD
 
 ---
 
+如果把未来能力拆成正式能力对象，会更容易看出这些能力为什么不是“堆功能”，而是一套可递进的系统底盘：
+
+```mermaid
+classDiagram
+    class SemanticCore {
+      object_graph
+      object_diff
+      object_history
+    }
+    class ControlCore {
+      workflow_state
+      gate_engine
+      risk_board
+    }
+    class ActionCore {
+      tool_runtime
+      task_contract
+      artifact_actions
+    }
+    class GovernanceCore {
+      approval_chain
+      version_ledger
+      audit_log
+    }
+    class KnowledgeCore {
+      template_hub
+      eval_dashboard
+      team_profile
+    }
+
+    SemanticCore --> ControlCore : 支撑
+    ControlCore --> ActionCore : 驱动
+    ActionCore --> GovernanceCore : 进入正式生产
+    GovernanceCore --> KnowledgeCore : 沉淀
+```
+
+---
+
 ## 13. 核心结论
 
 DeerFlow 未来应该增加的能力，不是“把所有 AI 能力都接进来”，而是有意识地补齐四类根基：

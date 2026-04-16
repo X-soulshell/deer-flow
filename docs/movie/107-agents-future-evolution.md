@@ -280,6 +280,40 @@ DeerFlow 最应该吸收的，不是某家公司的 UI，而是这三条未来�
 
 ---
 
+如果把未来 agent 的关键对象单独抽出来，会更容易看出“连接、执行、分工、观测”为什么会一起成为第二阶段智能体的基础：
+
+```mermaid
+classDiagram
+    class ManagerAgent {
+      goal_parser
+      task_planner
+      handoff_policy
+    }
+    class SpecialistAgent {
+      specialty_scope
+      tool_access
+      output_contract
+    }
+    class ConnectorProtocol {
+      system_binding
+      context_exchange
+      action_interface
+    }
+    class ObservabilityCore {
+      trace_log
+      eval_case
+      guardrail_event
+    }
+
+    ManagerAgent --> SpecialistAgent : 编排
+    ManagerAgent --> ConnectorProtocol : 连接
+    SpecialistAgent --> ConnectorProtocol : 执行
+    ManagerAgent --> ObservabilityCore : 留痕
+    SpecialistAgent --> ObservabilityCore : 留痕
+```
+
+---
+
 ## 11. 核心结论
 
 智能体未来的发展主线，不是“更会聊天”，而是：
