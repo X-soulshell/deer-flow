@@ -198,6 +198,24 @@ flowchart LR
 - critical risk resolved
 - rollback triggered
 
+### 一张故障调查旅程图
+
+```mermaid
+journey
+    title 电影项目问题的观测与调查旅程
+    section 发现异常
+      看到阶段阻塞: 4: PM, 平台运营
+      看到风险升级: 4: Lead Agent, PM
+    section 追踪原因
+      查看 task / state / artifact 事件: 5: 工程, 平台运营
+      复原 timeline 与关键拐点: 5: 工程, PM
+    section 采取动作
+      触发修复与回退: 4: 工程, 项目团队
+      形成评估与改进建议: 5: 工程, 产品, 管理层
+```
+
+这张图补的是“观测体系会被谁怎么用”，让 80 不只是技术采集说明，也更像一份实际运营与排障手册。
+
 ---
 
 ## 9. 为什么电影平台需要 timeline 视图

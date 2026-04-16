@@ -179,6 +179,42 @@ flowchart TD
 
 - “以某个专业角色，在某个阶段，围绕某些对象，完成某类工作，并按固定结构返回”
 
+### 一张委派契约类图
+
+```mermaid
+classDiagram
+    class DelegationContract {
+      +target_role
+      +phase
+      +scope_refs
+      +objective
+      +constraints
+      +expected_outputs
+      +escalation_rule
+    }
+
+    class ScopeRefs {
+      +scene_ids
+      +budget_id
+      +schedule_id
+      +artifact_refs
+    }
+
+    class ExpectedResult {
+      +summary
+      +object_updates
+      +risk_items
+      +artifact_refs
+      +recommended_next_actions
+      +escalation_required
+    }
+
+    DelegationContract --> ScopeRefs : binds
+    DelegationContract --> ExpectedResult : requests
+```
+
+这张图把“电影化委派协议”从一组字段，变成了一个更稳定的接口结构，更适合后面继续落到 Schema、tool 协议和测试里。
+
 ---
 
 ## 7. 一张委派契约图

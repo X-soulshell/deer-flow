@@ -147,6 +147,49 @@ flowchart TD
 
 这样工具才能真正进入可追踪工作流。
 
+### 一张工具输入输出关系图
+
+```mermaid
+erDiagram
+    TOOL_REQUEST ||--o{ OBJECT_REF : includes
+    TOOL_REQUEST ||--o{ CONSTRAINT : limits
+    MOVIE_TOOL ||--o{ TOOL_REQUEST : handles
+    MOVIE_TOOL ||--o{ TOOL_RESULT : produces
+    TOOL_RESULT ||--o{ OBJECT_UPDATE : suggests
+    TOOL_RESULT ||--o{ ARTIFACT_REF : emits
+
+    TOOL_REQUEST {
+      string tool_name
+      string phase
+    }
+    OBJECT_REF {
+      string object_type
+      string object_id
+    }
+    CONSTRAINT {
+      string rule
+      string severity
+    }
+    MOVIE_TOOL {
+      string category
+      string action
+    }
+    TOOL_RESULT {
+      string summary
+      string status
+    }
+    OBJECT_UPDATE {
+      string target
+      string change_type
+    }
+    ARTIFACT_REF {
+      string path
+      string manifest_ref
+    }
+```
+
+这张图把 movie tool 从“一个调用动作”变成了“围绕对象与产物运转的执行节点”，更容易和对象系统、状态回写、artifact 管理串起来。
+
 ---
 
 ## 6. 一张工具分类图

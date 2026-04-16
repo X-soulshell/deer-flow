@@ -154,6 +154,32 @@ flowchart TD
 - 企业化不是重复试点
 - 而是把试点结果沉淀成可复制系统
 
+### 一张企业化演进图
+
+```mermaid
+gitGraph
+   commit id:"MVP"
+   branch pilot
+   checkout pilot
+   commit id:"真实项目验证"
+   branch governance
+   checkout governance
+   commit id:"权限/审计/归档"
+   checkout pilot
+   merge governance id:"试点治理固化"
+   branch rollout
+   checkout rollout
+   commit id:"模板化复制"
+   branch integration
+   checkout integration
+   commit id:"外部系统接入"
+   checkout rollout
+   merge integration id:"Program Rollout"
+   commit id:"Enterprise Platform"
+```
+
+这张图适合表达 90 的一个关键点：企业化不是线性加功能，而是把试点经验、治理规则和集成能力不断合并进平台主线。
+
 ---
 
 ## 8. 企业级阶段新增的核心要求

@@ -177,6 +177,20 @@ flowchart LR
     B --> C["P2<br/>Compliance + Knowledge + Portfolio"]
 ```
 
+### 一张演进时间线
+
+```mermaid
+timeline
+    title DeerFlow 面向视频-agent 时代的演进主线
+    现在 : 先稳住语义层、控制层、Review
+    下一步 : 接入 Model Registry 与 Evaluator
+    随后 : 建立 Version Ledger 与 Provenance
+    中期 : 沉淀 Knowledge / Template Hub
+    长期 : 进入多项目组合与媒体操作系统
+```
+
+这张图把 110 的优先级图补成了时间维度，更容易从战略规划角度理解“先补什么、后补什么”。
+
 ---
 
 ## 6. 一个务实判断：DeerFlow 不要先去做“最强生成体验”

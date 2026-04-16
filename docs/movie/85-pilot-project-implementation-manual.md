@@ -184,6 +184,23 @@ sequenceDiagram
 - 阶段中：跟踪 blocked / approval / escalation
 - 阶段结束：导出阶段 package 与复盘摘要
 
+### 一张试点周节奏甘特图
+
+```mermaid
+gantt
+    title 试点阶段的建议周节奏
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 周初
+    明确目标与对象范围 :w1, 2026-02-02, 2d
+    section 周中
+    运行主链与 review 中间结果 :w2, after w1, 3d
+    section 周末
+    记录风险与 lesson learned :w3, after w2, 2d
+```
+
+这张图把“周节奏”从文本建议变成了可以直接照着执行的实施板。
+
 ---
 
 ## 10. 试点中最重要的不是“结果完全正确”，而是“闭环是否成立”
