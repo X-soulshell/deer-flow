@@ -730,6 +730,41 @@ flowchart TD
 - 71 之后会继续进入 DeerFlow 源码改造与实现层
 - 79 会进一步把工作区、产物与文件流展开
 
+如果把产物、版本、交付包、归档快照单独抽成关系图，会更容易看出正式文件体系为什么必须是“有 lineage 的对象系统”：
+
+```mermaid
+erDiagram
+    ARTIFACT ||--o{ VERSION_SET : belongs_to
+    VERSION_SET ||--o{ RELEASE_PACKAGE : contributes_to
+    RELEASE_PACKAGE ||--o{ ARCHIVE_PACKAGE : snapshots_into
+    ARCHIVE_PACKAGE ||--o{ RETENTION_RECORD : governed_by
+
+    ARTIFACT {
+      string artifact_id
+      string artifact_type
+      string current_flag
+    }
+    VERSION_SET {
+      string version_id
+      string lineage_root_id
+      string approved_flag
+    }
+    RELEASE_PACKAGE {
+      string package_id
+      string package_type
+      string delivery_status
+    }
+    ARCHIVE_PACKAGE {
+      string archive_id
+      string snapshot_scope
+      string archived_at
+    }
+    RETENTION_RECORD {
+      string policy_name
+      string restore_entry
+    }
+```
+
 ---
 
 ## 27. 这一篇最重要的结论

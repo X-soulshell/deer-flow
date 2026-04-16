@@ -662,6 +662,42 @@ flowchart TD
 
 - 70：产物、版本与归档体系设计
 
+如果把记忆层拆成知识资产图谱，会更容易看出“项目内记忆”和“跨项目知识”为什么要同时存在：
+
+```mermaid
+erDiagram
+    PROJECT_MEMORY ||--o{ DECISION_MEMORY : contains
+    PROJECT_MEMORY ||--o{ LESSON_LEARNED : distills
+    LESSON_LEARNED ||--o{ REUSABLE_TEMPLATE : evolves_into
+    RISK_PATTERN ||--o{ RECOVERY_PATTERN : pairs_with
+    DECISION_MEMORY ||--o{ RISK_PATTERN : informs
+
+    PROJECT_MEMORY {
+      string memory_scope
+      string related_phase
+    }
+    DECISION_MEMORY {
+      string decision_type
+      string confidence_level
+    }
+    LESSON_LEARNED {
+      string lesson_type
+      string applicability
+    }
+    REUSABLE_TEMPLATE {
+      string template_type
+      string owner_role
+    }
+    RISK_PATTERN {
+      string risk_type
+      string recurrence_level
+    }
+    RECOVERY_PATTERN {
+      string recovery_type
+      string effectiveness
+    }
+```
+
 ---
 
 ## 25. 这一篇最重要的结论

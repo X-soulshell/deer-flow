@@ -714,6 +714,40 @@ flowchart TD
 - 69：记忆与知识沉淀设计
 - 70：产物、版本与归档体系设计
 
+如果把审批和升级单独抽成关系图，会更容易理解它们为什么不是两条分开的后台流程，而是一套联动控制系统：
+
+```mermaid
+erDiagram
+    APPROVAL_REQUEST ||--o{ APPROVAL_EVIDENCE : references
+    APPROVAL_REQUEST ||--o| ESCALATION_CASE : may_raise
+    ESCALATION_CASE ||--o{ DECISION_RECORD : resolves_with
+    DECISION_RECORD ||--o{ FOLLOW_UP_CHECK : creates
+
+    APPROVAL_REQUEST {
+      string approval_request_id
+      string decision_status
+      string requested_transition
+    }
+    APPROVAL_EVIDENCE {
+      string evidence_type
+      string scope_ref
+    }
+    ESCALATION_CASE {
+      string escalation_case_id
+      string severity
+      string target_role
+    }
+    DECISION_RECORD {
+      string decision_id
+      string outcome
+      string rollback_target
+    }
+    FOLLOW_UP_CHECK {
+      string check_id
+      string deadline
+    }
+```
+
 ---
 
 ## 27. 这一篇最重要的结论

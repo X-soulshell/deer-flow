@@ -417,6 +417,43 @@ flowchart LR
 - 75：movie tools 设计
 - 76：movie skills 设计
 
+如果把 registry 单独抽成关系图，会更容易看出“角色目录、阶段路由、装配声明、输出契约”为什么必须同时出现：
+
+```mermaid
+erDiagram
+    ROLE_ENTRY ||--o{ PHASE_RULE : gates
+    ROLE_ENTRY ||--o{ TOOL_BUNDLE : equips
+    ROLE_ENTRY ||--o{ SKILL_BUNDLE : equips
+    ROLE_ENTRY ||--o{ OUTPUT_CONTRACT : returns
+    ROLE_ENTRY ||--o{ RUNTIME_POLICY : constrains
+
+    ROLE_ENTRY {
+      string role_name
+      string role_category
+      string owner_scope
+    }
+    PHASE_RULE {
+      string allowed_phase
+      string blocked_state
+    }
+    TOOL_BUNDLE {
+      string tool_group
+      string required_flag
+    }
+    SKILL_BUNDLE {
+      string skill_pack
+      string activation_rule
+    }
+    OUTPUT_CONTRACT {
+      string schema_name
+      string artifact_type
+    }
+    RUNTIME_POLICY {
+      string timeout_policy
+      string escalation_policy
+    }
+```
+
 ---
 
 ## 20. 这一篇最重要的结论

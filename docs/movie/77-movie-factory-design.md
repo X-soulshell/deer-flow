@@ -414,6 +414,38 @@ classDiagram
 - 79：工作区、产物与文件流
 - 80：观测、日志与评估
 
+如果把 factory 的装配输入输出单独抽出来，会更容易看出它为什么是运行时“装配中枢”而不是配置转发器：
+
+```mermaid
+classDiagram
+    class AssemblyContext {
+      role
+      phase
+      control_state
+      project_profile
+    }
+    class BundleSelection {
+      tool_bundle
+      skill_bundle
+      middleware_bundle
+    }
+    class StatePolicy {
+      read_scope
+      write_scope
+      gate_policy
+    }
+    class RuntimeAgentInstance {
+      profile_name
+      active_capabilities
+      output_contract
+    }
+
+    AssemblyContext --> BundleSelection : 解析
+    AssemblyContext --> StatePolicy : 决定
+    BundleSelection --> RuntimeAgentInstance : 装配
+    StatePolicy --> RuntimeAgentInstance : 约束
+```
+
 ---
 
 ## 18. 这一篇最重要的结论

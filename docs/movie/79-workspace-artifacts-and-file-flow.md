@@ -382,6 +382,40 @@ stateDiagram-v2
 
 - 80：观测、日志与评估
 
+如果把文件流单独抽成正式关系图，会更容易看出工作区、artifact、package、archive 为什么必须是连续链路：
+
+```mermaid
+erDiagram
+    WORKSPACE_FILE ||--o{ ARTIFACT_RECORD : registered_as
+    ARTIFACT_RECORD ||--o{ PACKAGE_MANIFEST : included_in
+    PACKAGE_MANIFEST ||--o{ RELEASE_DIRECTORY : materializes
+    RELEASE_DIRECTORY ||--o{ ARCHIVE_SNAPSHOT : sealed_as
+
+    WORKSPACE_FILE {
+      string workspace_path
+      string file_state
+    }
+    ARTIFACT_RECORD {
+      string artifact_id
+      string scope_ref
+      string current_flag
+    }
+    PACKAGE_MANIFEST {
+      string manifest_id
+      string package_type
+      string package_status
+    }
+    RELEASE_DIRECTORY {
+      string directory_path
+      string sealed_flag
+    }
+    ARCHIVE_SNAPSHOT {
+      string archive_id
+      string restore_entry
+      string archived_at
+    }
+```
+
 ---
 
 ## 19. 这一篇最重要的结论

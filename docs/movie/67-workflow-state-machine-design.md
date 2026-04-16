@@ -710,6 +710,35 @@ flowchart LR
 - 69：记忆与知识沉淀设计
 - 70：产物、版本与归档体系设计
 
+如果把工作流控制拆成正式对象，会更容易看出“主阶段 / 子阶段 / 运行态 / gate”为什么必须分层：
+
+```mermaid
+classDiagram
+    class ProjectWorkflowState {
+      current_phase
+      current_subphase
+      control_state
+    }
+    class PhaseGate {
+      gate_name
+      required_objects
+      blocking_risks
+    }
+    class AllowedActionSet {
+      actions
+      blocked_reasons
+    }
+    class RollbackRule {
+      trigger
+      target_phase
+      recovery_plan
+    }
+
+    ProjectWorkflowState --> PhaseGate : 评估
+    PhaseGate --> AllowedActionSet : 产出
+    PhaseGate --> RollbackRule : 失败触发
+```
+
 ---
 
 ## 26. 这一篇最重要的结论
