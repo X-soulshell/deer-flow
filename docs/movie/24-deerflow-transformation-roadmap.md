@@ -145,6 +145,20 @@ flowchart LR
 - audit
 - multi-project orchestration
 
+如果把路线图翻成研发排程视角，会更容易看出为什么必须分阶段推进，而不是一次性铺开：
+
+```mermaid
+gantt
+    title DeerFlow 电影化改造的阶段路线
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m
+    section 平台演进
+    前期导演MVP :a1, 2026-01-01, 60d
+    执行与调度系统 :a2, after a1, 75d
+    后期版本管理 :a3, after a2, 75d
+    企业治理平台 :a4, after a3, 90d
+```
+
 ---
 
 ## 9. 一张源码改造层次图

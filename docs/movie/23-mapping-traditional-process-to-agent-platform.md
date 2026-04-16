@@ -121,6 +121,58 @@ flowchart TD
 - 风格模板
 - 参考案例库
 
+把五类映射放到对象关系里看，会更容易发现这不是单点替换，而是一组并行结构化动作：
+
+```mermaid
+erDiagram
+    TRADITIONAL_ROLE {
+      string name
+      string responsibility
+    }
+    AGENT_ROLE {
+      string name
+      string output_contract
+    }
+    TRADITIONAL_DOCUMENT {
+      string name
+      string owner
+    }
+    DOMAIN_OBJECT {
+      string name
+      string state
+    }
+    APPROVAL_RULE {
+      string trigger
+      string approver
+    }
+    WORKFLOW_STATE {
+      string stage
+      string status
+    }
+    COLLABORATION_PATTERN {
+      string participants
+      string handoff
+    }
+    TASK_DELEGATION {
+      string task
+      string assignee
+    }
+    EXPERIENCE_ASSET {
+      string genre
+      string heuristic
+    }
+    SKILL_MEMORY {
+      string skill
+      string memory_slot
+    }
+
+    TRADITIONAL_ROLE ||--|| AGENT_ROLE : 映射
+    TRADITIONAL_DOCUMENT ||--|| DOMAIN_OBJECT : 映射
+    APPROVAL_RULE ||--|| WORKFLOW_STATE : 映射
+    COLLABORATION_PATTERN ||--|| TASK_DELEGATION : 映射
+    EXPERIENCE_ASSET ||--|| SKILL_MEMORY : 映射
+```
+
 ---
 
 ## 8. 一张完整映射图

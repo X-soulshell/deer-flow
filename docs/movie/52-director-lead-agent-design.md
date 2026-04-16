@@ -113,6 +113,37 @@ flowchart LR
 - 决策结果
 - 结构化产物
 
+如果把输入输出契约单独抽出来，就能更清楚看到主智能体为什么更像总控层，而不是单一执行器：
+
+```mermaid
+classDiagram
+    class DirectorBrief {
+      project_goal
+      creative_direction
+      current_phase
+    }
+    class DelegationPlan {
+      tasks
+      owners
+      deadline
+    }
+    class RiskDigest {
+      risk
+      impact
+      mitigation
+    }
+    class DecisionSummary {
+      decision
+      rationale
+      next_step
+    }
+
+    DirectorBrief --> DelegationPlan : 触发
+    DelegationPlan --> RiskDigest : 暴露
+    RiskDigest --> DecisionSummary : 约束
+    DirectorBrief --> DecisionSummary : 对齐
+```
+
 ---
 
 ## 8. 第一版实现建议

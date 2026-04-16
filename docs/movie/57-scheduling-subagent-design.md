@@ -128,6 +128,21 @@ classDiagram
 
 没有排期能力，平台无法进入真实执行层。
 
+从排程编制视角看，排期子智能体的核心价值不只是输出一张表，而是持续处理约束、重排和风险：
+
+```mermaid
+gantt
+    title 排期子智能体生成初版计划的步骤
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 排期编制
+    约束收集 :a1, 2026-01-01, 2d
+    场景分组 :a2, after a1, 2d
+    初版排期 :a3, after a2, 3d
+    冲突重排 :a4, after a3, 2d
+    风险输出 :a5, after a4, 1d
+```
+
 ---
 
 ## 9. 这一篇最重要的结论
