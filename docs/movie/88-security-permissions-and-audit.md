@@ -290,6 +290,40 @@ flowchart TD
 - 89：评估指标与 ROI
 - 90：企业级落地路线图
 
+如果把安全控制面单独抽成关系图，会更容易看出“身份、权限、动作、审计”为什么必须一起设计：
+
+```mermaid
+erDiagram
+    ROLE_POLICY ||--o{ ACTION_SCOPE : grants
+    ACTION_SCOPE ||--o{ AUDIT_EVENT : records
+    APPROVAL_STATE ||--o{ ACTION_SCOPE : gates
+    SANDBOX_BOUNDARY ||--o{ ACTION_SCOPE : restricts
+
+    ROLE_POLICY {
+      string role_name
+      string permission_level
+    }
+    ACTION_SCOPE {
+      string action_type
+      string submit_mode
+      string publish_scope
+    }
+    AUDIT_EVENT {
+      string event_type
+      string actor
+      string target_ref
+    }
+    APPROVAL_STATE {
+      string state_name
+      string effective_flag
+    }
+    SANDBOX_BOUNDARY {
+      string read_scope
+      string write_scope
+      string sensitive_rule
+    }
+```
+
 ---
 
 ## 16. 这一篇最重要的结论

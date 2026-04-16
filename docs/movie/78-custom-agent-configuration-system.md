@@ -374,6 +374,40 @@ classDiagram
 - 79：工作区、产物与文件流
 - 80：观测、日志与评估
 
+如果把配置体系单独抽成关系图，会更容易看出“模板、覆盖、权限、动态 setup”为什么必须是同一套系统的不同层：
+
+```mermaid
+erDiagram
+    BASE_TEMPLATE ||--o{ ROLE_TEMPLATE : extends
+    ROLE_TEMPLATE ||--o{ PROJECT_OVERRIDE : customized_by
+    ROLE_TEMPLATE ||--o{ PERMISSION_POLICY : constrained_by
+    PROJECT_OVERRIDE ||--o{ SETUP_ACTION : materialized_by
+
+    BASE_TEMPLATE {
+      string template_name
+      string model_policy
+    }
+    ROLE_TEMPLATE {
+      string role_name
+      string phase_rules
+      string bundle_refs
+    }
+    PROJECT_OVERRIDE {
+      string project_id
+      string override_scope
+      string override_reason
+    }
+    PERMISSION_POLICY {
+      string read_scope
+      string write_scope
+      string publish_scope
+    }
+    SETUP_ACTION {
+      string setup_mode
+      string validation_result
+    }
+```
+
 ---
 
 ## 18. 这一篇最重要的结论

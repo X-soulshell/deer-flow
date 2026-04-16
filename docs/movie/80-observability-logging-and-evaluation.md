@@ -426,6 +426,37 @@ flowchart TD
 - 83：第二阶段研发计划
 - 84：第三阶段研发计划
 
+如果把观测体系单独抽成正式对象，会更容易看出“事件、trace、指标、告警、评估”为什么是连续链条：
+
+```mermaid
+classDiagram
+    class RuntimeEvent {
+      event_type
+      role
+      phase
+      duration_ms
+    }
+    class TraceRecord {
+      trace_id
+      timeline
+      bottleneck_hint
+    }
+    class MetricView {
+      metric_name
+      aggregation_window
+      threshold
+    }
+    class EvalReport {
+      report_type
+      result_summary
+      recommended_action
+    }
+
+    RuntimeEvent --> TraceRecord : 聚合
+    TraceRecord --> MetricView : 计算
+    MetricView --> EvalReport : 触发
+```
+
 ---
 
 ## 19. 这一篇最重要的结论

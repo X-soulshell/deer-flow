@@ -196,6 +196,23 @@ sequenceDiagram
 
 - 84：第三阶段研发计划
 
+如果把第二阶段拆成真正的研发节奏图，会更容易看出“视觉执行链”和“治理链”为什么要并行推进：
+
+```mermaid
+gantt
+    title 第二阶段研发里程碑
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 视觉执行链
+    ShotPlan 对象 :a1, 2026-02-01, 6d
+    Storyboard 与 artifact :a2, after a1, 6d
+    section 治理链
+    Review / Approval :b1, 2026-02-03, 7d
+    Package draft :b2, after b1, 5d
+    section 验收
+    闭环 demo :c1, after a2, 4d
+```
+
 ---
 
 ## 13. 这一篇最重要的结论

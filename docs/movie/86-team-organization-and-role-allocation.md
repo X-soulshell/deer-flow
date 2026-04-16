@@ -268,6 +268,47 @@ flowchart TD
 - 88：安全、权限与审计
 - 89：评估指标与 ROI
 
+如果把组织结构单独抽成责任关系图，会更容易看出“平台、领域、试点”为什么必须形成稳定协同，而不是临时拉群协作：
+
+```mermaid
+erDiagram
+    PLATFORM_TEAM ||--o{ PRODUCT_ROLE : owns
+    PLATFORM_TEAM ||--o{ ENGINEERING_ROLE : owns
+    PILOT_TEAM ||--o{ PILOT_OWNER : assigns
+    DOMAIN_GROUP ||--o{ DOMAIN_ADVISOR : provides
+    PILOT_OWNER }o--o{ DOMAIN_ADVISOR : coordinates_with
+    PRODUCT_ROLE }o--o{ ENGINEERING_ROLE : aligns_with
+
+    PLATFORM_TEAM {
+      string team_name
+      string objective
+    }
+    PRODUCT_ROLE {
+      string role_name
+      string decision_scope
+    }
+    ENGINEERING_ROLE {
+      string role_name
+      string delivery_scope
+    }
+    PILOT_TEAM {
+      string project_name
+      string run_goal
+    }
+    PILOT_OWNER {
+      string owner_name
+      string feedback_scope
+    }
+    DOMAIN_GROUP {
+      string expertise_area
+      string validation_scope
+    }
+    DOMAIN_ADVISOR {
+      string advisor_type
+      string review_scope
+    }
+```
+
 ---
 
 ## 15. 这一篇最重要的结论

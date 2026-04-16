@@ -253,6 +253,24 @@ DeerFlow 的匹配点主要有五个：
 
 这比简单说“少多少人”更符合好莱坞接受逻辑。
 
+如果把好莱坞 AI 使用场景放进判断矩阵，会更容易看出为什么采用顺序会从低 authorship 风险区往高治理区移动：
+
+```mermaid
+quadrantChart
+    title 好莱坞 AI 使用区间
+    x-axis 低权利与工会敏感度 --> 高权利与工会敏感度
+    y-axis 低生产落地成熟度 --> 高生产落地成熟度
+    quadrant-1 优先落地
+    quadrant-2 高敏感探索
+    quadrant-3 暂缓推进
+    quadrant-4 强治理试点
+    "previs / lookdev" : [0.22, 0.86]
+    "review / package assist" : [0.34, 0.79]
+    "post assist" : [0.41, 0.76]
+    "script authorship" : [0.91, 0.18]
+    "performer replica" : [0.95, 0.27]
+```
+
 ---
 
 ## 14. 这一篇最重要的结论

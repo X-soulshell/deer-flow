@@ -207,6 +207,24 @@ flowchart LR
 - 86：团队组织与角色分工
 - 87：数据治理与资产治理
 
+如果把第三阶段的投入重点放进矩阵里看，会更容易理解为什么这一阶段不该再盲目加业务范围：
+
+```mermaid
+quadrantChart
+    title 第三阶段优先级矩阵
+    x-axis 低试点准备价值 --> 高试点准备价值
+    y-axis 低实现稳定性收益 --> 高实现稳定性收益
+    quadrant-1 立即补齐
+    quadrant-2 后续深化
+    quadrant-3 暂缓投入
+    quadrant-4 谨慎扩展
+    "memory capture" : [0.84, 0.83]
+    "archive snapshot" : [0.88, 0.86]
+    "timeline / metrics" : [0.86, 0.82]
+    "新增角色扩展" : [0.39, 0.36]
+    "超大 scope 新功能" : [0.22, 0.28]
+```
+
 ---
 
 ## 13. 这一篇最重要的结论
