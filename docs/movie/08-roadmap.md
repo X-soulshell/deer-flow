@@ -315,16 +315,28 @@ MVP 应该聚焦前期导演智能体，而不是一开始覆盖整个电影工�
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 时间线 把“落地路线：如何分阶段把 DeerFlow 改造成导演智能体平台”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张甘特图把四阶段实施路线和代码落地优先级压缩到同一张图里，更接近这篇正文的执行语气: 不是泛泛谈愿景，而是明确每一阶段先做什么、后做什么。
 
 ```mermaid
-timeline
-    title 落地路线：如何分阶段把 DeerFlow 改造成导演智能体平台 的推进时间线
-    阶段 1 : 问题定义
-    阶段 2 : 系统分层
-    阶段 3 : 角色协作
-    阶段 4 : 对象治理
-    阶段 5 : 落地路径
+gantt
+    title 导演智能体平台的分阶段实施路线
+    dateFormat X
+    axisFormat %s
+
+    section Phase 1 MVP
+    导演 lead agent 与前期角色 :a1, 0, 2
+    前期核心对象与工具 :a2, after a1, 2
+
+    section Phase 2 拍摄执行
+    call sheet 与日报流 :a3, after a2, 2
+    现场调度与成本控制 :a4, after a3, 2
+
+    section Phase 3 后期与版本
+    review 与 version 系统 :a5, after a4, 2
+    交付包与归档链 :a6, after a5, 1
+
+    section Phase 4 行业平台
+    多项目治理与企业化 :a7, after a6, 2
 ```
 <!-- movie-visuals:end -->
 

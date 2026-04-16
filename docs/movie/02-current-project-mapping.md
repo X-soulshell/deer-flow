@@ -351,15 +351,30 @@ flowchart TD
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 流程图 把“当前项目能力映射：DeerFlow 如何承接导演智能体”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张类图把“现有底座”和“必须新增的电影层”放在一张图里，更能直接说明这篇的核心判断: DeerFlow 不是不能做，而是已经有底座，只差把电影制作特有的对象、流程和治理补上。
 
 ```mermaid
-flowchart LR
-    A["问题定义"] --> B["当前项目能力映射：DeerFlow 如何承接导演智能体"]
-    B --> C["系统分层"]
-    C --> D["角色协作"]
-    D --> E["对象治理"]
-    E --> F["落地路径"]
+classDiagram
+    class ExistingCore {
+      +lead_agent
+      +task_delegation
+      +thread_state
+      +memory_layer
+      +skills_layer
+      +sandbox_workspace
+      +custom_agents
+    }
+
+    class MovieSpecificLayer {
+      +project_objects
+      +phase_state_machine
+      +industry_tools
+      +approval_flow
+      +version_system
+      +department_roles
+    }
+
+    ExistingCore --> MovieSpecificLayer : extend_into
 ```
 <!-- movie-visuals:end -->
 

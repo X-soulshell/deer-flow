@@ -307,15 +307,44 @@ flowchart TD
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 流程图 把“工具、记忆、技能：导演智能体真正可用的执行底座”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张关系图把工具、记忆、技能和运行时放进同一个结构里，更能解释这篇为什么一直强调三者必须一起设计，而不是零散补能力。
 
 ```mermaid
-flowchart LR
-    A["问题定义"] --> B["工具、记忆、技能：导演智能体真正可用的执行底座"]
-    B --> C["系统分层"]
-    C --> D["角色协作"]
-    D --> E["对象治理"]
-    E --> F["落地路径"]
+erDiagram
+    AGENT_RUNTIME {
+      string role
+      string current_phase
+      string workspace
+    }
+
+    TOOL_BUNDLE {
+      string tool_group
+      string action_scope
+    }
+
+    MEMORY_LAYER {
+      string long_term
+      string project_memory
+      string phase_memory
+      string task_memory
+    }
+
+    SKILL_PACK {
+      string method
+      string checklist
+      string output_template
+    }
+
+    ARTIFACT_SET {
+      string package_type
+      string version
+    }
+
+    AGENT_RUNTIME }o--o{ TOOL_BUNDLE : uses
+    AGENT_RUNTIME }o--o{ MEMORY_LAYER : reads_and_writes
+    AGENT_RUNTIME }o--o{ SKILL_PACK : loads
+    AGENT_RUNTIME ||--o{ ARTIFACT_SET : produces
+    SKILL_PACK ||--o{ ARTIFACT_SET : shapes
 ```
 <!-- movie-visuals:end -->
 

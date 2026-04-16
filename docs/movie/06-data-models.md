@@ -395,27 +395,20 @@ Project、Script、Budget、Schedule、ShotPlan、Review、AssetVersion 是最�
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 类图 把“数据模型：如何把电影制作从对话变成可管理项目”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张关系图把 Project、Script、Schedule、ShotPlan、Review、AssetVersion 这些核心对象正式串起来，更能体现这篇的中心判断: 只要对象关系不清，系统就永远停留在聊天工具层。
 
 ```mermaid
-classDiagram
-    class TopicContext {
-      +focus: 数据模型：如何把电影制作从对话变成可管理项目
-      +stage: active
-    }
-    class TopicDecision {
-      +rule: 问题定义
-      +alignment: 系统分层
-    }
-    class TopicDelivery {
-      +handoff: 角色协作
-      +governance: 对象治理
-      +result: 落地路径
-    }
-
-    TopicContext --> TopicDecision : 驱动
-    TopicDecision --> TopicDelivery : 产出
-    TopicDelivery --> TopicContext : 反哺
+erDiagram
+    PROJECT ||--|| SCRIPT : owns
+    PROJECT ||--o| BUDGET : controls
+    PROJECT ||--o| SCHEDULE : controls
+    PROJECT ||--o{ SHOT_PLAN : contains
+    SCRIPT ||--o{ SCENE : contains
+    SCENE ||--o{ CHARACTER : features
+    SCENE ||--o{ SHOT_PLAN : drives
+    PROJECT ||--o{ REVIEW : receives
+    SHOT_PLAN ||--o{ ASSET_VERSION : produces
+    REVIEW ||--o{ DELIVERABLE : approves
 ```
 <!-- movie-visuals:end -->
 

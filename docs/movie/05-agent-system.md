@@ -278,22 +278,40 @@ flowchart TB
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 时序图 把“Agent 体系：导演、制片、摄影、后期如何组织成多智能体系统”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张类图把“导演主控、部门主管、执行 agent、工具 agent”连成清晰层级，更接近这篇真正要表达的组织设计，而不是把所有角色都看成同一层的助手。
 
 ```mermaid
-sequenceDiagram
-    participant U as 用户/项目
-    participant L as Lead Agent
-    participant S as 专业角色
-    participant G as 治理层
-    participant A as 产物/状态
+classDiagram
+    class DirectorLeadAgent {
+      +creative_direction
+      +phase_control
+      +final_decision
+    }
 
-    U->>L: 提出 Agent 体系：导演、制片、摄影、后期如何组织成多智能体系统
-    L->>S: 问题定义
-    S-->>L: 系统分层
-    L->>G: 角色协作
-    G-->>L: 对象治理
-    L->>A: 落地路径
+    class DepartmentAgent {
+      +producer
+      +storyboard
+      +cinematography
+      +editor
+    }
+
+    class ExecutionAgent {
+      +scheduler
+      +budget_controller
+      +asset_operator
+    }
+
+    class ToolAgent {
+      +budget_tool
+      +calendar_tool
+      +asset_tool
+      +review_tool
+    }
+
+    DirectorLeadAgent --> DepartmentAgent : delegates_to
+    DepartmentAgent --> ExecutionAgent : coordinates
+    ExecutionAgent --> ToolAgent : calls
+    DepartmentAgent --> ToolAgent : uses_directly
 ```
 <!-- movie-visuals:end -->
 

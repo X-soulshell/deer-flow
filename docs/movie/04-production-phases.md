@@ -269,16 +269,19 @@ flowchart TD
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 时间线 把“阶段工作流：前期、中期、后期如何被导演智能体接管”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张状态图把前期、中期、后期以及关键回退点连成一个正式流程，更符合这篇正文反复强调的阶段意识和 gate 控制。
 
 ```mermaid
-timeline
-    title 阶段工作流：前期、中期、后期如何被导演智能体接管 的推进时间线
-    阶段 1 : 问题定义
-    阶段 2 : 系统分层
-    阶段 3 : 角色协作
-    阶段 4 : 对象治理
-    阶段 5 : 落地路径
+stateDiagram-v2
+    [*] --> PreProduction
+    PreProduction --> Production : 剧本锁定 / 预算批准 / 排期确认
+    Production --> PostProduction : 拍摄完成 / 日报与素材齐备
+    PostProduction --> Delivery : cut 通过 / 交付包齐全
+    Delivery --> Retrospective : 上线与归档
+
+    Production --> PreProduction : 重大重排
+    PostProduction --> Production : 补拍返工
+    Retrospective --> [*]
 ```
 <!-- movie-visuals:end -->
 

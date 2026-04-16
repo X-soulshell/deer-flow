@@ -297,16 +297,39 @@ flowchart TB
 <!-- movie-visuals:start -->
 ## 补充图示：换一种视角看本篇
 
-下面这张 心智图 把“目标架构：如何把 DeerFlow 演进成导演智能体系统”再压缩成一个可快速扫读的结构视图，便于先抓关键关系，再回到正文细节。
+下面这张类图把四层架构的控制关系正式画出来，更贴近这篇真正想强调的重点: 不是一堆 agent 并列堆在一起，而是由导演控制层去驱动部门执行层，并通过项目对象层和执行底座层形成可治理系统。
 
 ```mermaid
-mindmap
-  root(("目标架构：如何把 DeerFlow 演进成导演智能体系统"))
-    问题定义
-    系统分层
-    角色协作
-    对象治理
-    落地路径
+classDiagram
+    class DirectorControlLayer {
+      +goal_setting
+      +phase_decision
+      +approval_gate
+    }
+
+    class DepartmentExecutionLayer {
+      +producer_agents
+      +creative_agents
+      +post_agents
+    }
+
+    class ProjectObjectLayer {
+      +project_state
+      +script_budget_schedule
+      +review_version
+    }
+
+    class RuntimeFoundationLayer {
+      +task_runtime
+      +memory_skills
+      +workspace_tools
+    }
+
+    DirectorControlLayer --> DepartmentExecutionLayer : orchestrates
+    DirectorControlLayer --> ProjectObjectLayer : reads_and_controls
+    DepartmentExecutionLayer --> ProjectObjectLayer : updates
+    DepartmentExecutionLayer --> RuntimeFoundationLayer : uses
+    ProjectObjectLayer --> RuntimeFoundationLayer : persists_on
 ```
 <!-- movie-visuals:end -->
 
