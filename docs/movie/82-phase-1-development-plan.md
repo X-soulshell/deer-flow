@@ -109,6 +109,23 @@ flowchart TD
 - 结构化返回
 - artifact 基础导出
 
+### 一张里程碑甘特图
+
+```mermaid
+gantt
+    title 第一阶段研发建议节奏
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 基础骨架
+    总控与状态打底 :m1, 2026-01-06, 10d
+    section 对象与工具
+    对象与工具打底 :m2, after m1, 12d
+    section 委派与产物
+    委派与产物打底 :m3, after m2, 9d
+```
+
+这张图强调第一阶段不是功能清单，而是有依赖关系的节奏安排。
+
 ---
 
 ## 6. 第一阶段优先实现哪些角色

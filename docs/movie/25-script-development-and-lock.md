@@ -71,6 +71,22 @@ flowchart LR
 
 所以导演智能体必须具备“变更影响分析”能力。
 
+### 一张剧本状态图
+
+```mermaid
+stateDiagram-v2
+    [*] --> Concept
+    Concept --> Draft: 故事与 treatment 成型
+    Draft --> Revision: 导演/制片反馈
+    Revision --> FeasibilityReview: 进入预算与排期评估
+    FeasibilityReview --> Locked: 满足执行条件
+    Locked --> Reopen: 发生重大创作或执行变更
+    Reopen --> Revision: 回到修订
+    Locked --> [*]
+```
+
+这张图把“剧本开发”从线性流程补成了状态视角，更容易看清为什么锁稿之后的变更会触发重新评估。
+
 ---
 
 ## 6. 导演智能体如何承接锁稿流程

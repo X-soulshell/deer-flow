@@ -131,6 +131,29 @@ if self.thread_data is not None:
 
 这正是电影部门协作最需要的“共享项目、隔离上下文”。
 
+### 一张部门委派时序图
+
+```mermaid
+sequenceDiagram
+    participant D as Director
+    participant T as task tool
+    participant R as registry
+    participant E as SubagentExecutor
+    participant S as 部门子智能体
+    participant P as 项目状态/产物
+
+    D->>T: 发起部门任务
+    T->>R: 根据 subagent_type 读取配置
+    R-->>T: 返回角色配置与限制
+    T->>E: 组装上下文、工具、模型
+    E->>S: 启动子任务
+    S->>P: 读取/写入项目上下文与产物
+    S-->>E: 返回结构化结果
+    E-->>D: 汇总结果供主控决策
+```
+
+这张图把源码里的 `task -> registry -> executor -> subagent` 链条，直接映射成电影部门协作过程。
+
 ---
 
 ## 4. 子智能体状态机为什么重要

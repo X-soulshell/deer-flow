@@ -96,6 +96,54 @@ approvals
 
 因为这样改造成本最低，而且最容易和当前运行时集成。
 
+### 一张状态与配置关系图
+
+```mermaid
+erDiagram
+    THREAD_STATE ||--o{ ARTIFACT : contains
+    THREAD_STATE ||--o{ TODO_ITEM : tracks
+    THREAD_STATE ||--o{ THREAD_DATA : carries
+    AGENT_CONFIG ||--|| AGENT_SOUL : loads
+    AGENT_CONFIG ||--o{ TOOL_GROUP : enables
+    AGENT_CONFIG ||--o{ SKILL_GROUP : enables
+    AGENT_CONFIG ||--o{ THREAD_STATE : runs_with
+
+    THREAD_STATE {
+      string title
+      string phase
+      string project_ref
+    }
+    THREAD_DATA {
+      string workspace
+      string project_context
+    }
+    ARTIFACT {
+      string path
+      string version
+    }
+    TODO_ITEM {
+      string status
+      string summary
+    }
+    AGENT_CONFIG {
+      string name
+      string model
+      string description
+    }
+    AGENT_SOUL {
+      string soul_file
+      string persona
+    }
+    TOOL_GROUP {
+      string tool_set
+    }
+    SKILL_GROUP {
+      string skill_set
+    }
+```
+
+这张图把 `ThreadState`、`AgentConfig`、SOUL、工具组和技能组放到同一个关系视图里，更容易看清“运行时状态”和“角色配置”是如何衔接的。
+
 ---
 
 ## 4. 自定义 agent 配置：导演人格与角色配置的入口

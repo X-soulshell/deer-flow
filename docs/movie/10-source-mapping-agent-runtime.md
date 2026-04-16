@@ -146,6 +146,27 @@ middlewares.append(ClarificationMiddleware())
 - 在 Sandbox 层承接项目资产目录
 - 在 Clarification 层承接关键审批前澄清
 
+### 一张运行时链路图
+
+```mermaid
+sequenceDiagram
+    participant U as 用户请求
+    participant L as Lead Agent
+    participant M1 as Todo / Memory
+    participant M2 as Sandbox / Summarization
+    participant M3 as Subagent Limit / Clarification
+    participant O as 输出与状态回写
+
+    U->>L: 提交电影制作任务
+    L->>M2: 装载项目上下文与压缩历史
+    M2->>M1: 进入阶段计划与项目记忆
+    M1->>M3: 准备委派与澄清保护
+    M3->>L: 返回可执行运行时环境
+    L->>O: 产出回复、任务、状态更新
+```
+
+这张图把“主智能体 + middleware 链”压缩成一个更接近运行时的执行顺序，便于把抽象中间件理解成真实项目推进链。
+
 ---
 
 ## 4. 为什么 `is_plan_mode` 对导演智能体特别重要

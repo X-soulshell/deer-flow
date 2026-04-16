@@ -96,6 +96,74 @@ flowchart TD
     G --> G3[ProjectMemory]
 ```
 
+### 一张对象关系图
+
+```mermaid
+erDiagram
+    PROJECT ||--o{ SCRIPT : owns
+    PROJECT ||--o{ BUDGET_DRAFT : owns
+    PROJECT ||--o{ SCHEDULE_DRAFT : owns
+    PROJECT ||--o{ APPROVAL_RECORD : governs
+    PROJECT ||--o{ PROJECT_MEMORY : accumulates
+    SCRIPT ||--o{ SCENE : contains
+    SCENE ||--o{ CHARACTER : involves
+    SCENE ||--o{ SHOT_PLAN : drives
+    SHOT_PLAN ||--o{ TAKE : generates
+    TAKE ||--o{ EDIT_VERSION : feeds
+    EDIT_VERSION ||--o{ RELEASE_PACKAGE : packages
+
+    PROJECT {
+      string id
+      string phase
+    }
+    SCRIPT {
+      string version
+      string lock_status
+    }
+    SCENE {
+      string scene_id
+      string location
+    }
+    CHARACTER {
+      string name
+      string role_type
+    }
+    SHOT_PLAN {
+      string shot_id
+      string intent
+    }
+    TAKE {
+      string take_id
+      string quality
+    }
+    EDIT_VERSION {
+      string version_id
+      string status
+    }
+    BUDGET_DRAFT {
+      string version
+      string estimate
+    }
+    SCHEDULE_DRAFT {
+      string version
+      string shoot_days
+    }
+    APPROVAL_RECORD {
+      string gate
+      string result
+    }
+    RELEASE_PACKAGE {
+      string package_id
+      string target
+    }
+    PROJECT_MEMORY {
+      string memory_type
+      string summary
+    }
+```
+
+这张图把前面的分域总览，进一步压成“对象之间如何连起来”的关系视图，尤其适合系统设计和数据建模阶段快速对齐。
+
 ---
 
 ## 4. 对象系统不是数据库表，而是“协作语言”
