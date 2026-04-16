@@ -732,6 +732,32 @@ flowchart TD
 - 69：记忆与知识沉淀设计
 - 70：产物、版本与归档体系设计
 
+如果把这三类核心对象单独抽成关系图，会更容易看清它们为什么是整个系统的叙事骨架：
+
+```mermaid
+erDiagram
+    SCRIPT ||--o{ SCENE : contains
+    SCRIPT ||--o{ CHARACTER : defines
+    SCENE }o--o{ CHARACTER : includes
+
+    SCRIPT {
+      string script_id
+      string version
+      string approval_status
+    }
+    SCENE {
+      string scene_id
+      string day_night
+      string location_type
+      string story_purpose
+    }
+    CHARACTER {
+      string character_id
+      string arc_role
+      string casting_priority
+    }
+```
+
 ---
 
 ## 26. 这一篇最重要的结论

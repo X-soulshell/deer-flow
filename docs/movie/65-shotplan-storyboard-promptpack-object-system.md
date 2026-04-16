@@ -925,6 +925,36 @@ flowchart TD
 - 69：记忆与知识沉淀设计
 - 70：产物、版本与归档体系设计
 
+如果把这三类视觉执行对象单独抽成关系图，会更容易看出它们为什么必须一起进入正式对象系统：
+
+```mermaid
+erDiagram
+    SCENE ||--o{ SHOT_PLAN : decomposes
+    SHOT_PLAN ||--o{ STORYBOARD_FRAME : visualizes
+    SHOT_PLAN ||--o{ PROMPT_PACK : constrains
+    STORYBOARD_FRAME }o--o{ PROMPT_PACK : references
+
+    SCENE {
+      string scene_id
+      string emotion_target
+    }
+    SHOT_PLAN {
+      string shot_id
+      string movement_style
+      string execution_risk
+    }
+    STORYBOARD_FRAME {
+      string frame_id
+      string composition_type
+      string review_status
+    }
+    PROMPT_PACK {
+      string pack_id
+      string model_profile
+      string version_status
+    }
+```
+
 ---
 
 ## 30. 这一篇最重要的结论

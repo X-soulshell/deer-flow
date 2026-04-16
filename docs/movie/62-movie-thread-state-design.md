@@ -639,6 +639,40 @@ flowchart LR
 - 增加电影项目专用状态字段
 - 建立对象系统与线程状态之间的同步规则
 
+如果把字段分层再压成一个结构图，会更容易理解 `MovieThreadState` 为什么更像“驾驶舱”而不是“聊天缓存”：
+
+```mermaid
+classDiagram
+    class IdentityLayer {
+      project_id
+      project_title
+      thread_mode
+      workspace_id
+    }
+    class PhaseLayer {
+      current_phase
+      phase_goal
+      phase_status
+      phase_gate_status
+    }
+    class ObjectLayer {
+      active_script_id
+      active_budget_id
+      active_schedule_id
+      active_review_ids
+    }
+    class ControlLayer {
+      risk_register
+      approval_status
+      deliverable_status
+      next_actions
+    }
+
+    IdentityLayer --> PhaseLayer : 定位
+    PhaseLayer --> ObjectLayer : 聚焦
+    ObjectLayer --> ControlLayer : 驱动
+```
+
 ---
 
 ## 19. 一张代码映射图

@@ -814,6 +814,22 @@ flowchart TD
 - 69：记忆与知识沉淀设计
 - 70：产物、版本与归档体系设计
 
+如果把治理链单独抽成状态流，会更容易理解 review、approval、package 为什么是一条连续放行链：
+
+```mermaid
+stateDiagram-v2
+    [*] --> InReview
+    InReview --> NeedsRevision
+    NeedsRevision --> InReview
+    InReview --> ApprovalPending
+    ApprovalPending --> ConditionallyApproved
+    ApprovalPending --> Rejected
+    Rejected --> InReview
+    ConditionallyApproved --> PackageReady
+    PackageReady --> Released
+    Released --> Archived
+```
+
 ---
 
 ## 29. 这一篇最重要的结论

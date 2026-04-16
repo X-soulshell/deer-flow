@@ -757,6 +757,45 @@ flowchart TD
 - 69：记忆与知识沉淀设计
 - 70：产物、版本与归档体系设计
 
+如果把预算、排期、资源单独抽成执行层关系图，会更容易看出它们为什么必须作为联动系统一起设计：
+
+```mermaid
+erDiagram
+    BUDGET ||--o{ SCENE_COST : aggregates
+    SCHEDULE ||--o{ SHOOT_DAY : organizes
+    RESOURCE_PLAN ||--o{ RESOURCE_BOOKING : contains
+    SCHEDULE ||--o{ RESOURCE_BOOKING : consumes
+    BUDGET ||--o{ RESOURCE_BOOKING : funds
+
+    BUDGET {
+      string budget_id
+      string version
+      string approval_status
+    }
+    SCHEDULE {
+      string schedule_id
+      string schedule_type
+      string target_wrap_date
+    }
+    RESOURCE_PLAN {
+      string resource_plan_id
+      string risk_level
+      string lock_status
+    }
+    SCENE_COST {
+      string scene_id
+      string cost_driver
+    }
+    SHOOT_DAY {
+      string shoot_day_id
+      string date_slot
+    }
+    RESOURCE_BOOKING {
+      string resource_id
+      string booking_window
+    }
+```
+
 ---
 
 ## 27. 这一篇最重要的结论
