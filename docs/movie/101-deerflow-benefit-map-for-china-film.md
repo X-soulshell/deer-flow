@@ -219,6 +219,42 @@ DeerFlow 的意义就在于：
 
 DeerFlow 恰好能把这些问题一起处理。
 
+如果把中国电影环境里的收益对象单独抽出来，会更容易看出 DeerFlow 为什么更适合做“项目主链中枢”而不只是模型入口：
+
+```mermaid
+erDiagram
+    MODEL_REGISTRY ||--o{ PROJECT_THREAD : routes_to
+    PROJECT_THREAD ||--o{ COMPLIANCE_RECORD : requires
+    PROJECT_THREAD ||--o{ ARTIFACT_PACKAGE : produces
+    COMPLIANCE_RECORD ||--o{ RELEASE_LOG : verifies
+    ARTIFACT_PACKAGE ||--o{ RELEASE_LOG : publishes
+
+    MODEL_REGISTRY {
+      string model_name
+      string provider
+      string fallback_rule
+    }
+    PROJECT_THREAD {
+      string project_id
+      string phase
+      string owner_role
+    }
+    COMPLIANCE_RECORD {
+      string label_status
+      string metadata_status
+    }
+    ARTIFACT_PACKAGE {
+      string package_id
+      string package_type
+      string current_state
+    }
+    RELEASE_LOG {
+      string channel
+      string publish_status
+      string trace_id
+    }
+```
+
 ---
 
 ## 9. 核心结论

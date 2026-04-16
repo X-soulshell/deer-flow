@@ -288,6 +288,38 @@ flowchart LR
 
 一旦这个位置站住，模型能力的升级反而会不断放大 DeerFlow 的价值。
 
+如果把 ROI、治理、落地路线放进一张对象图，会更容易看出 DeerFlow 为什么必须同时经营“价值证明”和“控制能力”：
+
+```mermaid
+classDiagram
+    class ProcessROI {
+      cycle_time
+      review_speed
+      search_time
+    }
+    class ProjectROI {
+      rework_reduction
+      risk_shift_left
+      delivery_stability
+    }
+    class OrgROI {
+      template_reuse
+      onboarding_speed
+      governance_readiness
+    }
+    class GovernanceCore {
+      rights_control
+      version_control
+      model_control
+      audit_control
+    }
+
+    ProcessROI --> ProjectROI : 放大
+    ProjectROI --> OrgROI : 复利
+    GovernanceCore --> ProcessROI : 保障
+    GovernanceCore --> ProjectROI : 稳定
+```
+
 ---
 
 ## 11. 核心结论

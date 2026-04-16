@@ -240,6 +240,42 @@ flowchart LR
 
 都能被 DeerFlow 收进一个可治理的生产系统里。
 
+如果把 Cameron 型项目的核心对象单独抽出来，会更容易看出为什么他最需要的是“完整栈协同”而不是单次生成能力：
+
+```mermaid
+erDiagram
+    WORLD_BIBLE ||--o{ ASSET_CLUSTER : defines
+    ASSET_CLUSTER ||--o{ PREVIS_PLAN : feeds
+    PREVIS_PLAN ||--o{ SHOOT_EXECUTION : informs
+    SHOOT_EXECUTION ||--o{ DELIVERY_VERSION : produces
+    DELIVERY_VERSION ||--o{ KNOWLEDGE_REUSE : distills
+
+    WORLD_BIBLE {
+      string world_id
+      string canon_scope
+    }
+    ASSET_CLUSTER {
+      string asset_group
+      string continuity_rule
+    }
+    PREVIS_PLAN {
+      string previs_id
+      string risk_level
+    }
+    SHOOT_EXECUTION {
+      string execution_mode
+      string capture_type
+    }
+    DELIVERY_VERSION {
+      string version_id
+      string package_status
+    }
+    KNOWLEDGE_REUSE {
+      string template_name
+      string reuse_scope
+    }
+```
+
 ---
 
 ## 9. 核心结论

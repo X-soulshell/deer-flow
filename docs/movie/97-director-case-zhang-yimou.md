@@ -222,6 +222,36 @@ flowchart LR
 
 串成闭环，它对中国电影的价值就会非常大。
 
+如果把张艺谋型项目的关键协同对象单独抽出来，会更容易看出为什么它本质上是“作者审美 + 大场面工业执行”的双系统：
+
+```mermaid
+classDiagram
+    class CulturalCorpus {
+      ritual_rules
+      visual_symbols
+      historical_refs
+    }
+    class VisualSystem {
+      color_logic
+      costume_rules
+      composition_rules
+    }
+    class CrowdStagingPlan {
+      formation_design
+      movement_order
+      resource_constraints
+    }
+    class VersionPackage {
+      domestic_materials
+      festival_materials
+      multilingual_assets
+    }
+
+    CulturalCorpus --> VisualSystem : 校准
+    VisualSystem --> CrowdStagingPlan : 指导
+    CrowdStagingPlan --> VersionPackage : 输出
+```
+
 ---
 
 ## 9. 核心结论

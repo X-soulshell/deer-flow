@@ -200,6 +200,41 @@ flowchart LR
 
 - 让某个岗位少几个人
 
+如果把好莱坞收益地图里的核心治理对象单独抽出来，会更容易看出 DeerFlow 为什么更像“合规化生产系统”而不是普通创意工具：
+
+```mermaid
+erDiagram
+    RIGHTS_SCOPE ||--o{ CONSENT_RECORD : requires
+    CONSENT_RECORD ||--o{ APPROVAL_DECISION : supports
+    APPROVAL_DECISION ||--o{ VERSION_PACKAGE : releases
+    VERSION_PACKAGE ||--o{ AUDIT_CHAIN : records
+
+    RIGHTS_SCOPE {
+      string asset_scope
+      string usage_boundary
+    }
+    CONSENT_RECORD {
+      string consent_id
+      string performer_scope
+      string valid_until
+    }
+    APPROVAL_DECISION {
+      string decision_id
+      string approver_role
+      string release_condition
+    }
+    VERSION_PACKAGE {
+      string package_id
+      string package_state
+      string current_flag
+    }
+    AUDIT_CHAIN {
+      string event_type
+      string actor
+      string timestamp
+    }
+```
+
 ---
 
 ## 9. 核心结论

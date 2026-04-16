@@ -230,6 +230,23 @@ flowchart LR
 - DeerFlow 不是“写写分镜提示词”的工具
 - 而是能进入电影工业主链的操作系统
 
+如果把郭帆型项目的试点推进节奏拉成排程图，会更容易看出为什么它最适合拿来验证 DeerFlow 的系统工程能力：
+
+```mermaid
+gantt
+    title 郭帆型项目试点节奏
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    section 工程拆解
+    剧本与设定抽取 :a1, 2026-03-01, 5d
+    VFX / Resource 映射 :a2, after a1, 5d
+    section 预演与执行
+    风险板与排期 :b1, after a2, 4d
+    现场执行支持 :b2, after b1, 4d
+    section 沉淀
+    Lessons / Templates :c1, after b2, 3d
+```
+
 ---
 
 ## 9. 核心结论
